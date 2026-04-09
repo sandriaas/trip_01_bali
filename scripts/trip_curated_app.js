@@ -8,6 +8,7 @@
   const STORAGE_STATE = 'trip-curated-state-v1';
   const STORAGE_LISTS = 'trip-curated-saved-lists-v1';
   const STORAGE_NOTES = 'trip-curated-notes-v1';
+  const STORAGE_ARCHIVE = 'trip-curated-archive-v1';
   const DEFAULT_SORTS = [
     { key: 'location', dir: 'asc' },
     { key: 'category', dir: 'asc' },
@@ -50,6 +51,7 @@
     type: document.getElementById('typeFilter'),
     region: document.getElementById('regionFilter'),
     category: document.getElementById('categoryFilter'),
+    archiveView: document.getElementById('archiveFilter'),
     sort1Key: document.getElementById('sort1Key'),
     sort1Dir: document.getElementById('sort1Dir'),
     sort2Key: document.getElementById('sort2Key'),
@@ -107,7 +109,7 @@
       '        <span class="hero-pill"><strong id="selectedCount">0</strong> selected</span>',
       '      </div>',
       '    </div>',
-      '    <p>Compact local planner rebuilt from the live Traveloka saved list. Keep the original card info, add location intelligence, Google review context, AI access notes, comparison guidance, and your own right-column notes, then save named views or checked lists and export the selected rows as HTML, HTM, PDF, or PNG.</p>',
+      '    <p>Compact local planner rebuilt from the live Traveloka saved list. Keep the original card info, add location intelligence, Google review context, AI access notes, comparison guidance, your own right-column notes, and archive rows you want out of the active list, then save named views or checked lists and export the selected rows as HTML, HTM, PDF, or PNG.</p>',
       '    <div class="hero-meta">',
       '      <span class="hero-pill">Extracted <strong id="extractedAt"></strong></span>',
       '      <span class="hero-pill">Source <a id="sourceUrl" target="_blank" rel="noreferrer">Traveloka saved list</a></span>',
@@ -130,6 +132,10 @@
       '      <div class="field">',
       '        <label for="categoryFilter">Category</label>',
       '        <select id="categoryFilter"></select>',
+      '      </div>',
+      '      <div class="field">',
+      '        <label for="archiveFilter">Status</label>',
+      '        <select id="archiveFilter"></select>',
       '      </div>',
       '    </div>',
       '    <div class="sort-grid">',
@@ -209,7 +215,7 @@
       '      <div>Custom Note</div>',
       '    </div>',
       '    <div id="rows"></div>',
-      '    <div class="footer-note">Default order is <strong>Location → Category → List Name</strong>. Saved views store filters and sorting. Saved lists store checked rows only. Custom notes save in the browser while you type, and <strong>Save Planner HTML</strong> embeds the current notes into a new standalone file.</div>',
+      '    <div class="footer-note">Default order is <strong>Location → Category → List Name</strong>. Saved views store filters and sorting. Saved lists store checked rows only. Archive removes rows from the default active list until restored. Custom notes save in the browser while you type, and <strong>Save Planner HTML</strong> embeds the current notes and archive state into a new standalone file.</div>',
       '  </section>',
       '  <div class="export-host" id="exportHost" aria-hidden="true"></div>',
       '</div>',
@@ -222,17 +228,20 @@
     const views = parseJson(localStorage.getItem(STORAGE_VIEWS), {});
     const savedLists = parseJson(localStorage.getItem(STORAGE_LISTS), {});
     const savedNotes = parseJson(localStorage.getItem(STORAGE_NOTES), {});
+    const savedArchive = parseJson(localStorage.getItem(STORAGE_ARCHIVE), {});
 
     return {
       search: saved.search || '',
       type: saved.type || 'all',
       region: saved.region || 'all',
       category: saved.category || 'all',
+      archiveView: saved.archiveView || 'active',
       sorts: normalizeSorts(saved.sorts || DEFAULT_SORTS),
       selected: sanitizeSelection(selectedRaw),
       views: sanitizeViews(views),
       lists: sanitizeLists(savedLists),
       notes: mergeNotes(embeddedNotesFromItems(), sanitizeNotes(savedNotes)),
+      archive: mergeArchive(embeddedArchiveFromItems(), sanitizeArchive(savedArchive)),
     };
   }
 
@@ -253,6 +262,11 @@
     refs.category.innerHTML = [option('all', 'All Categories')]
       .concat(allCategories.map(function (category) { return option(category, category); }))
       .join('');
+    refs.archiveView.innerHTML = [
+      option('active', 'Active'),
+      option('archived', 'Archived'),
+      option('all', 'All'),
+    ].join('');
 
     fillSortSelect(refs.sort1Key);
     fillSortSelect(refs.sort2Key);
@@ -290,6 +304,12 @@
       render();
     });
 
+    refs.archiveView.addEventListener('change', function () {
+      state.archiveView = refs.archiveView.value;
+      persistState();
+      render();
+    });
+
     [
       [refs.sort1Key, 0, 'key'],
       [refs.sort1Dir, 0, 'dir'],
@@ -320,6 +340,7 @@
         type: state.type,
         region: state.region,
         category: state.category,
+        archiveView: state.archiveView,
         sorts: normalizeSorts(state.sorts),
       };
       persistViews();
@@ -335,6 +356,7 @@
       state.type = view.type || 'all';
       state.region = view.region || 'all';
       state.category = view.category || 'all';
+      state.archiveView = view.archiveView || 'active';
       state.sorts = normalizeSorts(view.sorts || DEFAULT_SORTS);
       syncControls();
       persistState();
@@ -465,6 +487,16 @@
       };
       persistNotes();
     });
+
+    refs.rows.addEventListener('click', function (event) {
+      const target = event.target;
+      if (!(target instanceof HTMLElement)) return;
+      const button = target.closest('[data-archive-id]');
+      if (!(button instanceof HTMLButtonElement)) return;
+      const id = button.getAttribute('data-archive-id');
+      if (!id || !itemIndex.has(id)) return;
+      toggleArchive(id);
+    });
   }
 
   function render() {
@@ -486,6 +518,7 @@
     const totalSelected = getSelectedCount();
     refs.summary.innerHTML = [
       summaryPill('Visible', String(visibleItems.length)),
+      summaryPill('Archived', String(getArchivedCount())),
       summaryPill('Selected Visible', String(selectedVisible)),
       summaryPill('Selected Total', String(totalSelected)),
       summaryPill('Current Sort', describeSorts(state.sorts)),
@@ -495,11 +528,12 @@
   function renderBatchPanel(visibleItems) {
     const selectedItems = getSelectedItems();
     const selectedVisible = visibleItems.filter(function (item) { return !!state.selected[item.id]; }).length;
-    refs.batchPanel.hidden = selectedItems.length === 0;
+    refs.batchPanel.hidden = false;
     refs.batchCount.textContent = String(selectedItems.length);
     refs.batchSummary.innerHTML = [
       summaryPill('Selected Total', String(selectedItems.length)),
       summaryPill('Selected Visible', String(selectedVisible)),
+      summaryPill('Archived', String(getArchivedCount())),
       summaryPill('Saved Lists', String(Object.keys(state.lists).length)),
       summaryPill('Export Order', describeSorts(state.sorts)),
     ].join('');
@@ -516,6 +550,10 @@
 
   function getSelectedCount() {
     return Object.keys(state.selected).length;
+  }
+
+  function getArchivedCount() {
+    return Object.keys(state.archive).length;
   }
 
   function matchesFilters(item) {
@@ -537,7 +575,10 @@
       .toLowerCase();
 
     const search = state.search.trim().toLowerCase();
+    const archived = isArchived(item.id);
     if (search && !haystack.includes(search)) return false;
+    if (state.archiveView === 'active' && archived) return false;
+    if (state.archiveView === 'archived' && !archived) return false;
     if (state.type !== 'all' && item.typeLabel !== state.type) return false;
     if (state.region !== 'all' && item.regionLabel !== state.region) return false;
     if (state.category !== 'all' && !item.categories.includes(state.category)) return false;
@@ -581,8 +622,9 @@
 
   function renderInteractiveRow(item) {
     const selected = !!state.selected[item.id];
+    const archived = isArchived(item.id);
     return [
-      '<div class="trip-row', selected ? ' is-selected' : '', '" data-id="', escapeHtml(item.id), '">',
+      '<div class="trip-row', selected ? ' is-selected' : '', archived ? ' is-archived' : '', '" data-id="', escapeHtml(item.id), '">',
       renderLocationCell(item),
       renderCategoryCell(item),
       renderInsightsCell(item),
@@ -658,15 +700,17 @@
   }
 
   function renderListCell(item, interactive) {
+    const archived = isArchived(item.id);
     return [
       '<section class="cell">',
       '  <div class="list-card">',
       interactive
-        ? '    <label class="select-wrap"><input type="checkbox" data-id="' + escapeHtml(item.id) + '"' + (state.selected[item.id] ? ' checked' : '') + '></label>'
+        ? '    <div class="row-actions"><label class="select-wrap"><input type="checkbox" data-id="' + escapeHtml(item.id) + '"' + (state.selected[item.id] ? ' checked' : '') + '></label><button class="archive-toggle' + (archived ? ' is-restore' : '') + '" type="button" data-archive-id="' + escapeHtml(item.id) + '">' + (archived ? 'Restore' : 'Archive') + '</button></div>'
         : '    <span class="select-wrap" aria-hidden="true"></span>',
       renderThumb(item),
       '    <div class="list-copy">',
       '      <div class="type-label">', escapeHtml(item.typeLabel), '</div>',
+      archived ? '      <div class="archive-chip">Archived</div>' : '',
       item.travelokaUrl
         ? '      <a class="title-link" href="' + escapeHtml(item.travelokaUrl) + '" target="_blank" rel="noreferrer">' + escapeHtml(item.title) + '</a>'
         : '      <div class="title-link">' + escapeHtml(item.title) + '</div>',
@@ -915,12 +959,14 @@
       return Object.assign({}, item, {
         customNote: noteRecord.text || '',
         customNoteUpdatedAt: noteRecord.updatedAt || '',
+        archivedAt: getArchiveRecord(item.id)?.archivedAt || '',
       });
     });
     const nextMeta = Object.assign({}, snapshotMeta, {
       count: plannerItems.length,
       savedAt: new Date().toISOString(),
       noteCount: plannerItems.filter(function (item) { return !!String(item.customNote || '').trim(); }).length,
+      archivedCount: plannerItems.filter(function (item) { return !!item.archivedAt; }).length,
     });
 
     let documentHtml = '<!doctype html>\n' + document.documentElement.outerHTML;
@@ -965,6 +1011,10 @@
     localStorage.setItem(STORAGE_NOTES, JSON.stringify(state.notes));
   }
 
+  function persistArchive() {
+    localStorage.setItem(STORAGE_ARCHIVE, JSON.stringify(state.archive));
+  }
+
   function persistViews() {
     localStorage.setItem(STORAGE_VIEWS, JSON.stringify(state.views));
   }
@@ -979,6 +1029,7 @@
       type: state.type,
       region: state.region,
       category: state.category,
+      archiveView: state.archiveView,
       sorts: state.sorts,
     }));
   }
@@ -988,6 +1039,7 @@
     refs.type.value = state.type;
     refs.region.value = state.region;
     refs.category.value = state.category;
+    refs.archiveView.value = state.archiveView;
     refs.sort1Key.value = state.sorts[0].key;
     refs.sort1Dir.value = state.sorts[0].dir;
     refs.sort2Key.value = state.sorts[1].key;
@@ -1069,19 +1121,21 @@
   function setExportBusy(isBusy) {
     state.exporting = !!isBusy;
     refs.batchPanel.dataset.busy = String(state.exporting);
-    [
-      refs.savePlannerHtml,
-      refs.saveList,
-      refs.loadList,
-      refs.deleteList,
-      refs.clearSelection,
-      refs.exportHtml,
-      refs.exportHtm,
-      refs.exportPdf,
-      refs.exportPng,
-    ].forEach(function (button) {
-      button.disabled = state.exporting;
-    });
+    refs.savePlannerHtml.disabled = state.exporting;
+    syncSelectionActionButtons();
+  }
+
+  function syncSelectionActionButtons() {
+    const hasSelection = getSelectedCount() > 0;
+    const hasSavedLists = Object.keys(state.lists).length > 0;
+    refs.saveList.disabled = state.exporting || !hasSelection;
+    refs.loadList.disabled = state.exporting || !hasSavedLists;
+    refs.deleteList.disabled = state.exporting || !hasSavedLists;
+    refs.clearSelection.disabled = state.exporting || !hasSelection;
+    refs.exportHtml.disabled = state.exporting || !hasSelection;
+    refs.exportHtm.disabled = state.exporting || !hasSelection;
+    refs.exportPdf.disabled = state.exporting || !hasSelection;
+    refs.exportPng.disabled = state.exporting || !hasSelection;
   }
 
   function wireThumbnailFallbacks(root) {
@@ -1150,6 +1204,7 @@
         type: entry[1]?.type || 'all',
         region: entry[1]?.region || 'all',
         category: entry[1]?.category || 'all',
+        archiveView: entry[1]?.archiveView || 'active',
         sorts: normalizeSorts(entry[1]?.sorts || DEFAULT_SORTS),
       };
     });
@@ -1189,6 +1244,24 @@
     return notes;
   }
 
+  function sanitizeArchive(value) {
+    const archive = {};
+    Object.entries(value || {}).forEach(function (entry) {
+      const id = entry[0];
+      if (!itemIndex.has(id)) return;
+      const raw = entry[1];
+      if (typeof raw === 'string') {
+        archive[id] = { archivedAt: raw };
+        return;
+      }
+      if (!raw || typeof raw !== 'object') return;
+      const archivedAt = typeof raw.archivedAt === 'string' ? raw.archivedAt : '';
+      if (!archivedAt) return;
+      archive[id] = { archivedAt: archivedAt };
+    });
+    return archive;
+  }
+
   function embeddedNotesFromItems() {
     const notes = {};
     items.forEach(function (item) {
@@ -1199,6 +1272,15 @@
       };
     });
     return notes;
+  }
+
+  function embeddedArchiveFromItems() {
+    const archive = {};
+    items.forEach(function (item) {
+      if (!item.archivedAt) return;
+      archive[item.id] = { archivedAt: item.archivedAt };
+    });
+    return archive;
   }
 
   function mergeNotes(embeddedNotes, savedNotes) {
@@ -1228,6 +1310,28 @@
     return { text: right.text || '', updatedAt: right.updatedAt || '' };
   }
 
+  function mergeArchive(embeddedArchive, savedArchive) {
+    const merged = {};
+    unique(Object.keys(embeddedArchive).concat(Object.keys(savedArchive))).forEach(function (id) {
+      const chosen = chooseArchiveRecord(embeddedArchive[id], savedArchive[id]);
+      if (chosen) {
+        merged[id] = chosen;
+      }
+    });
+    return merged;
+  }
+
+  function chooseArchiveRecord(left, right) {
+    if (!left && !right) return null;
+    if (!left) return { archivedAt: right.archivedAt || '' };
+    if (!right) return { archivedAt: left.archivedAt || '' };
+    const leftTime = parseTimestamp(left.archivedAt);
+    const rightTime = parseTimestamp(right.archivedAt);
+    return rightTime >= leftTime
+      ? { archivedAt: right.archivedAt || '' }
+      : { archivedAt: left.archivedAt || '' };
+  }
+
   function getNoteRecord(item) {
     const note = state.notes[item.id];
     if (note) {
@@ -1244,6 +1348,30 @@
 
   function getNoteText(item) {
     return getNoteRecord(item).text || '';
+  }
+
+  function getArchiveRecord(id) {
+    const record = state.archive[id];
+    if (record && record.archivedAt) {
+      return { archivedAt: record.archivedAt };
+    }
+    return null;
+  }
+
+  function isArchived(id) {
+    return !!getArchiveRecord(id);
+  }
+
+  function toggleArchive(id) {
+    if (isArchived(id)) {
+      delete state.archive[id];
+    } else {
+      state.archive[id] = { archivedAt: new Date().toISOString() };
+      delete state.selected[id];
+    }
+    persistArchive();
+    persistSelection();
+    render();
   }
 
   function parseJson(value, fallback) {

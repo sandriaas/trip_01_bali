@@ -1,11 +1,11 @@
 # Trip 01 Bali
 
-Compact offline trip planner rebuilt from a Traveloka saved-list snapshot, with embedded thumbnails, Google-review context, AI access notes, comparison guidance, and a custom note column.
+Compact offline trip planner rebuilt from a Traveloka saved-list snapshot, with embedded thumbnails, Google-review context, AI access notes, comparison guidance, a custom note column, and local archive support.
 
 ## What is included
 
 - `trip-curated.html`
-  Standalone planner with embedded thumbnails, saved views, saved lists, Google review labels, `Insights`, `Comparison`, a rightmost `Custom Note` column, and export buttons for `HTML`, `HTM`, `PDF`, and `PNG`.
+  Standalone planner with embedded thumbnails, saved views, saved lists, Google review labels, `Insights`, `Comparison`, a rightmost `Custom Note` column, per-row archive buttons, and export buttons for `HTML`, `HTM`, `PDF`, and `PNG`.
 - `8fd62a39-514e-472c-ad51-2f8d48898bd3.htm`
   Original saved page snapshot used as a fallback image source.
 - `data/`
@@ -17,6 +17,8 @@ Compact offline trip planner rebuilt from a Traveloka saved-list snapshot, with 
 
 - Column order is `Location`, `Category`, `Insights`, `Comparison`, `List`, `Custom Note`.
 - Default sorting is `Location > Category > List Name`.
+- Each row has an archive button beside the checklist.
+  Archived rows disappear from the default `Active` view and can be restored from the `Status` filter.
 - Thumbnails are embedded as `data:image/...` values so the planner works without hotlinking Traveloka images at runtime.
 - Each row includes:
   - Google Maps label with rating/count when Google exposed a usable place match
@@ -24,7 +26,7 @@ Compact offline trip planner rebuilt from a Traveloka saved-list snapshot, with 
   - comparison guidance against similar saved-list alternatives
 - The `Custom Note` column is editable.
   Notes are stored in browser local storage while you type.
-  Use `Save Planner HTML` in the toolbar to download a new standalone planner file with the current note text embedded into the HTML itself.
+  Use `Save Planner HTML` in the toolbar to download a new standalone planner file with the current note text and archive state embedded into the HTML itself.
 - The toolbar is non-sticky.
 
 ## Rebuild
