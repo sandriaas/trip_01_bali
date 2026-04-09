@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { enrichInsightRows } from './trip_insights_lib.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -11,6 +12,7 @@ const DATA_DIR = path.join(ROOT, 'data');
 const SNAPSHOT_PATH = path.join(DATA_DIR, 'live_snapshot.json');
 const METADATA_PATH = path.join(DATA_DIR, 'trip_metadata.json');
 const ITEMS_PATH = path.join(DATA_DIR, 'trip_items_live.json');
+const GOOGLE_CACHE_PATH = path.join(DATA_DIR, 'google_place_cache.json');
 const HTML_PATH = path.join(ROOT, 'trip-curated.html');
 const SINGLEFILE_SNAPSHOT_PATH = path.join(ROOT, '8fd62a39-514e-472c-ad51-2f8d48898bd3.htm');
 const STYLES_PATH = path.join(__dirname, 'trip_curated_styles.css');
@@ -141,6 +143,10 @@ const ITEM_IMAGE_URL_OVERRIDES = {
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function readJsonIfExists(filePath, fallback = null) {
+  return fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : fallback;
 }
 
 function readTextIfExists(filePath) {
@@ -654,11 +660,15 @@ ${app}
 }
 
 const snapshot = readJson(SNAPSHOT_PATH);
+const googleCache = new Map(
+  (readJsonIfExists(GOOGLE_CACHE_PATH, []) || []).map((entry) => [entry.id, entry]),
+);
 const normalized = snapshot.rows.map((row) => parseCard(row, snapshot.extractedAt));
-const enriched = [];
+const baseRows = [];
 for (const item of normalized) {
-  enriched.push(await buildEnrichedRow(item));
+  baseRows.push(await buildEnrichedRow(item));
 }
+const enriched = enrichInsightRows(baseRows, googleCache);
 
 const metadata = enriched.map((item) => ({
   id: item.id,
@@ -669,8 +679,18 @@ const metadata = enriched.map((item) => ({
   island: item.island,
   city: item.city,
   mapsUrl: item.mapsUrl,
+  googlePlaceUrl: item.googlePlaceUrl,
+  googlePlaceName: item.googlePlaceName,
+  googlePlaceMatchMode: item.googlePlaceMatchMode,
+  googleRating: item.googleRating,
+  googleReviewCount: item.googleReviewCount,
   categories: item.categories,
   primaryCategory: item.primaryCategory,
+  mobilityFriendlyScore: item.mobilityFriendlyScore,
+  viewScore: item.viewScore,
+  beautyScore: item.beautyScore,
+  experienceScore: item.experienceScore,
+  overallRecommendationScore: item.overallRecommendationScore,
 }));
 
 fs.writeFileSync(METADATA_PATH, JSON.stringify(metadata, null, 2));

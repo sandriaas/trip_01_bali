@@ -7,6 +7,7 @@
   const STORAGE_SELECTION = 'trip-curated-selection-v1';
   const STORAGE_STATE = 'trip-curated-state-v1';
   const STORAGE_LISTS = 'trip-curated-saved-lists-v1';
+  const STORAGE_NOTES = 'trip-curated-notes-v1';
   const DEFAULT_SORTS = [
     { key: 'location', dir: 'asc' },
     { key: 'category', dir: 'asc' },
@@ -16,6 +17,11 @@
     { value: 'location', label: 'Location' },
     { value: 'category', label: 'Category' },
     { value: 'listName', label: 'List Name' },
+    { value: 'recommendation', label: 'Recommendation' },
+    { value: 'mobility', label: 'Mobility' },
+    { value: 'views', label: 'Views' },
+    { value: 'beauty', label: 'Beauty' },
+    { value: 'experience', label: 'Experience' },
     { value: 'price', label: 'Price' },
     { value: 'rating', label: 'Rating' },
     { value: 'type', label: 'Type' },
@@ -65,6 +71,7 @@
     selectVisible: document.getElementById('selectVisible'),
     clearToolbarSelection: document.getElementById('clearToolbarSelection'),
     resetFilters: document.getElementById('resetFilters'),
+    savePlannerHtml: document.getElementById('savePlannerHtml'),
     batchPanel: document.getElementById('batchPanel'),
     batchSummary: document.getElementById('batchSummary'),
     batchCount: document.getElementById('batchCount'),
@@ -100,7 +107,7 @@
       '        <span class="hero-pill"><strong id="selectedCount">0</strong> selected</span>',
       '      </div>',
       '    </div>',
-      '    <p>Compact local planner rebuilt from the live Traveloka saved list. Keep the original card info, add location intelligence and categories, save named views, save named checked lists, and export the selected rows as HTML, HTM, PDF, or PNG.</p>',
+      '    <p>Compact local planner rebuilt from the live Traveloka saved list. Keep the original card info, add location intelligence, Google review context, AI access notes, comparison guidance, and your own right-column notes, then save named views or checked lists and export the selected rows as HTML, HTM, PDF, or PNG.</p>',
       '    <div class="hero-meta">',
       '      <span class="hero-pill">Extracted <strong id="extractedAt"></strong></span>',
       '      <span class="hero-pill">Source <a id="sourceUrl" target="_blank" rel="noreferrer">Traveloka saved list</a></span>',
@@ -156,6 +163,7 @@
       '      <button class="btn subtle" id="selectVisible" type="button">Select Visible</button>',
       '      <button class="btn subtle" id="clearToolbarSelection" type="button">Clear Selection</button>',
       '      <button class="btn subtle" id="resetFilters" type="button">Reset Filters</button>',
+      '      <button class="btn primary" id="savePlannerHtml" type="button">Save Planner HTML</button>',
       '      <div class="summary-strip" id="summaryStrip"></div>',
       '    </div>',
       '  </section>',
@@ -195,10 +203,13 @@
       '    <div class="table-header">',
       '      <div>Location</div>',
       '      <div>Category</div>',
+      '      <div>Insights</div>',
+      '      <div>Comparison</div>',
       '      <div>List</div>',
+      '      <div>Custom Note</div>',
       '    </div>',
       '    <div id="rows"></div>',
-      '    <div class="footer-note">Default order is <strong>Location → Category → List Name</strong>. Saved views store filters and sorting. Saved lists store checked rows only.</div>',
+      '    <div class="footer-note">Default order is <strong>Location → Category → List Name</strong>. Saved views store filters and sorting. Saved lists store checked rows only. Custom notes save in the browser while you type, and <strong>Save Planner HTML</strong> embeds the current notes into a new standalone file.</div>',
       '  </section>',
       '  <div class="export-host" id="exportHost" aria-hidden="true"></div>',
       '</div>',
@@ -210,6 +221,7 @@
     const selectedRaw = parseJson(localStorage.getItem(STORAGE_SELECTION), {});
     const views = parseJson(localStorage.getItem(STORAGE_VIEWS), {});
     const savedLists = parseJson(localStorage.getItem(STORAGE_LISTS), {});
+    const savedNotes = parseJson(localStorage.getItem(STORAGE_NOTES), {});
 
     return {
       search: saved.search || '',
@@ -220,6 +232,7 @@
       selected: sanitizeSelection(selectedRaw),
       views: sanitizeViews(views),
       lists: sanitizeLists(savedLists),
+      notes: mergeNotes(embeddedNotesFromItems(), sanitizeNotes(savedNotes)),
     };
   }
 
@@ -367,6 +380,10 @@
       render();
     });
 
+    refs.savePlannerHtml.addEventListener('click', function () {
+      handlePlannerSave();
+    });
+
     refs.saveList.addEventListener('click', function () {
       const name = refs.listName.value.trim();
       const selectedItems = getSelectedItems();
@@ -436,6 +453,18 @@
       persistSelection();
       render();
     });
+
+    refs.rows.addEventListener('input', function (event) {
+      const target = event.target;
+      if (!(target instanceof HTMLTextAreaElement)) return;
+      const id = target.getAttribute('data-note-id');
+      if (!id || !itemIndex.has(id)) return;
+      state.notes[id] = {
+        text: target.value,
+        updatedAt: new Date().toISOString(),
+      };
+      persistNotes();
+    });
   }
 
   function render() {
@@ -491,6 +520,7 @@
 
   function matchesFilters(item) {
     const haystack = [
+      item.searchText,
       item.title,
       item.rawLocation,
       item.regionLabel,
@@ -500,6 +530,7 @@
       item.island,
       item.primaryCategory,
       item.categories.join(' '),
+      getNoteText(item),
     ]
       .filter(Boolean)
       .join(' ')
@@ -524,6 +555,16 @@
         result = collator.compare(left.sortCategoryKey, right.sortCategoryKey);
       } else if (rule.key === 'listName') {
         result = collator.compare(left.sortListNameKey, right.sortListNameKey);
+      } else if (rule.key === 'recommendation') {
+        result = compareNullable(left.overallRecommendationScore, right.overallRecommendationScore);
+      } else if (rule.key === 'mobility') {
+        result = compareNullable(left.mobilityFriendlyScore, right.mobilityFriendlyScore);
+      } else if (rule.key === 'views') {
+        result = compareNullable(left.viewScore, right.viewScore);
+      } else if (rule.key === 'beauty') {
+        result = compareNullable(left.beautyScore, right.beautyScore);
+      } else if (rule.key === 'experience') {
+        result = compareNullable(left.experienceScore, right.experienceScore);
       } else if (rule.key === 'price') {
         result = compareNullable(left.priceValue, right.priceValue);
       } else if (rule.key === 'rating') {
@@ -544,7 +585,10 @@
       '<div class="trip-row', selected ? ' is-selected' : '', '" data-id="', escapeHtml(item.id), '">',
       renderLocationCell(item),
       renderCategoryCell(item),
+      renderInsightsCell(item),
+      renderComparisonCell(item),
       renderListCell(item, true),
+      renderNoteCell(item, true),
       '</div>',
     ].join('');
   }
@@ -557,7 +601,8 @@
       '  <div class="source-line"><strong>Source location:</strong> ', escapeHtml(item.rawLocation || 'Unknown'), '</div>',
       '  <div class="link-row">',
       item.travelokaUrl ? link(item.travelokaUrl, item.travelokaUrlLabel) : '<span class="pending">Traveloka link pending</span>',
-      link(item.mapsUrl, item.mapsUrlLabel),
+      item.googlePlaceUrl ? link(item.googlePlaceUrl, buildGoogleLinkLabel(item)) : link(item.mapsUrl, item.mapsUrlLabel),
+      renderMatchBadge(item.googlePlaceMatchMode),
       '  </div>',
       '</section>',
     ].join('');
@@ -569,6 +614,45 @@
       '  <div class="chips">',
       item.categories.map(function (category) { return '<span class="chip">' + escapeHtml(category) + '</span>'; }).join(''),
       '  </div>',
+      '</section>',
+    ].join('');
+  }
+
+  function renderInsightsCell(item) {
+    return [
+      '<section class="cell insights-cell">',
+      '  <div class="score-grid">',
+      renderScoreChip('Mob', item.mobilityFriendlyScore),
+      renderScoreChip('View', item.viewScore),
+      renderScoreChip('Beauty', item.beautyScore),
+      renderScoreChip('Exp', item.experienceScore),
+      renderScoreChip('Rec', item.overallRecommendationScore, true),
+      '  </div>',
+      '  <div class="insight-line"><strong>AI:</strong> ', escapeHtml(item.aiSummary || 'No AI note yet.'), '</div>',
+      '  <div class="insight-line"><strong>People:</strong> ', escapeHtml(item.crowdSummary || 'Public review detail is limited.'), '</div>',
+      '  <div class="fact-strip">',
+      renderFact('Walk', [item.walkDistanceText, item.walkTimeText].filter(Boolean).join(' · ')),
+      renderFact('Slope', item.steepnessLevel),
+      renderFact('Stairs', item.stairsLevel),
+      renderFact('Transport', item.transportAccess),
+      renderFact('DIY', item.selfGuidedAccess),
+      '  </div>',
+      '  <div class="insight-line"><strong>Knees:</strong> ', escapeHtml(item.kneeNote || 'No extra note.'), '</div>',
+      '</section>',
+    ].join('');
+  }
+
+  function renderComparisonCell(item) {
+    return [
+      '<section class="cell comparison-cell">',
+      '  <div class="comparison-top">',
+      '    <span class="comparison-badge">', escapeHtml(item.comparisonTierLabel || 'Selective'), '</span>',
+      '    <span class="comparison-rank">#', escapeHtml(String(item.comparisonRank || 1)), ' / ', escapeHtml(String(item.comparisonPoolSize || 1)), '</span>',
+      '  </div>',
+      '  <div class="comparison-pool">', escapeHtml(item.comparisonClusterLabel || 'Saved-list alternatives'), '</div>',
+      '  <div class="comparison-line"><strong>Relative:</strong> ', escapeHtml(item.peerComparisonSummary || 'No comparison note yet.'), '</div>',
+      '  <div class="comparison-line"><strong>Alt:</strong> ', escapeHtml(item.betterAlternativeSummary || 'No stronger alternative detected.'), '</div>',
+      '  <div class="comparison-line"><strong>Choose/Skip:</strong> ', escapeHtml(item.skipOrChooseWhy || 'No guidance yet.'), '</div>',
       '</section>',
     ].join('');
   }
@@ -590,7 +674,7 @@
       '      <div class="raw-line"><strong>Original location:</strong> ', escapeHtml(item.rawLocation || 'Unknown'), '</div>',
       '      <div class="url-line">',
       item.travelokaUrl ? link(item.travelokaUrl, item.title) : '',
-      item.mapsUrl ? link(item.mapsUrl, 'Google Maps') : '',
+      item.googlePlaceUrl ? link(item.googlePlaceUrl, buildGoogleLinkLabel(item)) : (item.mapsUrl ? link(item.mapsUrl, 'Google Maps') : ''),
       '      </div>',
       '    </div>',
       '    <div class="price-block">',
@@ -598,6 +682,27 @@
       '      <div class="price-meta">', escapeHtml(item.priceQualifier || ''), '</div>',
       '    </div>',
       '  </div>',
+      '</section>',
+    ].join('');
+  }
+
+  function renderNoteCell(item, interactive) {
+    const noteText = getNoteText(item);
+    if (!interactive) {
+      return [
+        '<section class="cell note-cell">',
+        noteText
+          ? '  <div class="note-display">' + escapeHtml(noteText).replace(/\n/g, '<br>') + '</div>'
+          : '  <div class="note-display is-empty">No custom note.</div>',
+        '</section>',
+      ].join('');
+    }
+
+    return [
+      '<section class="cell note-cell">',
+      '  <label class="note-label" for="note-', escapeHtml(item.id), '">Custom note</label>',
+      '  <textarea class="note-input" id="note-', escapeHtml(item.id), '" data-note-id="', escapeHtml(item.id), '" rows="6" placeholder="Your own note: route, warning, what to bring, compare, transport, or anything else.">', escapeHtml(noteText), '</textarea>',
+      '  <div class="note-hint">Saved locally while you type. Use Save Planner HTML to embed notes into a standalone planner file.</div>',
       '</section>',
     ].join('');
   }
@@ -626,7 +731,10 @@
         '<div class="trip-row">',
         renderLocationCell(item),
         renderCategoryCell(item),
+        renderInsightsCell(item),
+        renderComparisonCell(item),
         renderListCell(item, false),
+        renderNoteCell(item, false),
         '</div>',
       ].join('');
     }).join('');
@@ -644,10 +752,10 @@
       '          <span class="hero-pill"><strong>', String(selectedItems.length), '</strong> exported rows</span>',
       '        </div>',
       '      </div>',
-      '      <p>Standalone export from the curated trip planner. This snapshot preserves the current sort order and keeps both Traveloka and Google Maps links visible.</p>',
+      '      <p>Standalone export from the curated trip planner. This snapshot preserves the current sort order, keeps both Traveloka and Google Maps links visible, and includes the current custom notes.</p>',
       '    </section>',
       '    <section class="table-shell export-table">',
-      '      <div class="table-header"><div>Location</div><div>Category</div><div>List</div></div>',
+      '      <div class="table-header"><div>Location</div><div>Category</div><div>Insights</div><div>Comparison</div><div>List</div><div>Custom Note</div></div>',
       '      <div>', rowsHtml, '</div>',
       '    </section>',
       '  </div>',
@@ -709,6 +817,18 @@
     } catch (error) {
       console.error(error);
       window.alert('Export failed. Please try a smaller selection or retry.');
+    } finally {
+      setExportBusy(false);
+    }
+  }
+
+  function handlePlannerSave() {
+    setExportBusy(true);
+    try {
+      downloadFile(buildPlannerFilename(), buildPlannerDocument());
+    } catch (error) {
+      console.error(error);
+      window.alert('Saving the planner HTML failed. Please retry.');
     } finally {
       setExportBusy(false);
     }
@@ -781,12 +901,68 @@
     return ['trip-selected', yyyy, mm, dd].join('-') + '.' + extension;
   }
 
+  function buildPlannerFilename() {
+    const now = new Date();
+    const yyyy = String(now.getFullYear());
+    const mm = String(now.getMonth() + 1).padStart(2, '0');
+    const dd = String(now.getDate()).padStart(2, '0');
+    return ['trip-planner-with-notes', yyyy, mm, dd].join('-') + '.html';
+  }
+
+  function buildPlannerDocument() {
+    const plannerItems = items.map(function (item) {
+      const noteRecord = getNoteRecord(item);
+      return Object.assign({}, item, {
+        customNote: noteRecord.text || '',
+        customNoteUpdatedAt: noteRecord.updatedAt || '',
+      });
+    });
+    const nextMeta = Object.assign({}, snapshotMeta, {
+      count: plannerItems.length,
+      savedAt: new Date().toISOString(),
+      noteCount: plannerItems.filter(function (item) { return !!String(item.customNote || '').trim(); }).length,
+    });
+
+    let documentHtml = '<!doctype html>\n' + document.documentElement.outerHTML;
+    documentHtml = replaceScriptPayload(documentHtml, 'trip-data', stringifyForHtml(plannerItems));
+    documentHtml = replaceScriptPayload(documentHtml, 'trip-meta', stringifyForHtml(nextMeta));
+    return documentHtml;
+  }
+
   function composeAdminLine(item) {
     return [item.kecamatan, item.kelurahan, item.island, item.city].filter(Boolean).join(', ') || 'Not set';
   }
 
+  function buildGoogleLinkLabel(item) {
+    if (item.googleRating != null && item.googleReviewCount != null) {
+      return 'Google Maps · ' + item.googleRating.toFixed(1) + '★ (' + formatNumber(item.googleReviewCount) + ')';
+    }
+    if (item.googleRating != null) {
+      return 'Google Maps · ' + item.googleRating.toFixed(1) + '★';
+    }
+    return 'Google Maps · no rating';
+  }
+
+  function renderMatchBadge(mode) {
+    const label = mode === 'exact' ? 'Exact' : mode === 'heuristic' ? 'Heuristic' : 'Area match';
+    return '<span class="match-badge">' + escapeHtml(label) + '</span>';
+  }
+
+  function renderScoreChip(label, value, strong) {
+    return '<span class="score-chip' + (strong ? ' is-strong' : '') + '"><strong>' + escapeHtml(label) + '</strong> ' + escapeHtml(String(value ?? '—')) + '%</span>';
+  }
+
+  function renderFact(label, value) {
+    if (!value) return '';
+    return '<span class="fact-chip"><strong>' + escapeHtml(label) + ':</strong> ' + escapeHtml(value) + '</span>';
+  }
+
   function persistSelection() {
     localStorage.setItem(STORAGE_SELECTION, JSON.stringify(state.selected));
+  }
+
+  function persistNotes() {
+    localStorage.setItem(STORAGE_NOTES, JSON.stringify(state.notes));
   }
 
   function persistViews() {
@@ -894,6 +1070,7 @@
     state.exporting = !!isBusy;
     refs.batchPanel.dataset.busy = String(state.exporting);
     [
+      refs.savePlannerHtml,
       refs.saveList,
       refs.loadList,
       refs.deleteList,
@@ -993,6 +1170,82 @@
     return lists;
   }
 
+  function sanitizeNotes(value) {
+    const notes = {};
+    Object.entries(value || {}).forEach(function (entry) {
+      const id = entry[0];
+      if (!itemIndex.has(id)) return;
+      const raw = entry[1];
+      if (typeof raw === 'string') {
+        notes[id] = { text: raw, updatedAt: '' };
+        return;
+      }
+      if (!raw || typeof raw !== 'object') return;
+      notes[id] = {
+        text: typeof raw.text === 'string' ? raw.text : '',
+        updatedAt: typeof raw.updatedAt === 'string' ? raw.updatedAt : '',
+      };
+    });
+    return notes;
+  }
+
+  function embeddedNotesFromItems() {
+    const notes = {};
+    items.forEach(function (item) {
+      if (!item.customNote && !item.customNoteUpdatedAt) return;
+      notes[item.id] = {
+        text: item.customNote || '',
+        updatedAt: item.customNoteUpdatedAt || '',
+      };
+    });
+    return notes;
+  }
+
+  function mergeNotes(embeddedNotes, savedNotes) {
+    const merged = {};
+    unique(Object.keys(embeddedNotes).concat(Object.keys(savedNotes))).forEach(function (id) {
+      const chosen = chooseNoteRecord(embeddedNotes[id], savedNotes[id]);
+      if (chosen) {
+        merged[id] = chosen;
+      }
+    });
+    return merged;
+  }
+
+  function chooseNoteRecord(left, right) {
+    if (!left && !right) return null;
+    if (!left) return { text: right.text || '', updatedAt: right.updatedAt || '' };
+    if (!right) return { text: left.text || '', updatedAt: left.updatedAt || '' };
+
+    const leftTime = parseTimestamp(left.updatedAt);
+    const rightTime = parseTimestamp(right.updatedAt);
+    if (rightTime > leftTime) {
+      return { text: right.text || '', updatedAt: right.updatedAt || '' };
+    }
+    if (leftTime > rightTime) {
+      return { text: left.text || '', updatedAt: left.updatedAt || '' };
+    }
+    return { text: right.text || '', updatedAt: right.updatedAt || '' };
+  }
+
+  function getNoteRecord(item) {
+    const note = state.notes[item.id];
+    if (note) {
+      return {
+        text: typeof note.text === 'string' ? note.text : '',
+        updatedAt: typeof note.updatedAt === 'string' ? note.updatedAt : '',
+      };
+    }
+    return {
+      text: item.customNote || '',
+      updatedAt: item.customNoteUpdatedAt || '',
+    };
+  }
+
+  function getNoteText(item) {
+    return getNoteRecord(item).text || '';
+  }
+
   function parseJson(value, fallback) {
     try {
       return value ? JSON.parse(value) : fallback;
@@ -1021,6 +1274,30 @@
 
   function unique(list) {
     return list.filter(function (value, index) { return list.indexOf(value) === index; });
+  }
+
+  function formatNumber(value) {
+    return new Intl.NumberFormat('en-US').format(value);
+  }
+
+  function stringifyForHtml(value) {
+    return JSON.stringify(value).replace(/</g, '\\u003c');
+  }
+
+  function replaceScriptPayload(documentHtml, id, payload) {
+    const pattern = new RegExp('(<script id="' + id + '" type="application/json">)[\\s\\S]*?(</script>)');
+    const nextHtml = documentHtml.replace(pattern, function (_, open, close) {
+      return open + payload + close;
+    });
+    if (nextHtml === documentHtml) {
+      throw new Error('Could not update embedded payload for ' + id);
+    }
+    return nextHtml;
+  }
+
+  function parseTimestamp(value) {
+    const time = Date.parse(value || '');
+    return Number.isNaN(time) ? 0 : time;
   }
 
   function localeCompare(left, right) {

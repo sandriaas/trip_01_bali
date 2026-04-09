@@ -8,12 +8,22 @@
     "island": "Flores",
     "city": "West Manggarai",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Labuan%20Bajo%20City%20Tour%2C%20Rangko%20Cave%2C%20Baku%20Peduli%20Weaving%20House%2C%20%26%20Sylvia%20Hill%2C%20Labuan%20Bajo%2C%20Labuan%20Bajo%2C%20Komodo%2C%20West%20Manggarai%2C%20Flores%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Labuan+Bajo+City+Tour,+Rangko+Cave,+Baku+Peduli+Weaving+House,+%26+Sylvia+Hill,+Labuan+Bajo,+Labuan+Bajo,+Komodo,+West+Manggarai,+Flores,+Indonesia/@-8.5108341,117.5937642,8z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Komodo Lawa Adventure Labuan Bajo",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 5,
+    "googleReviewCount": 30,
     "categories": [
       "City Tour",
       "Cave",
       "Culture Village"
     ],
-    "primaryCategory": "City Tour"
+    "primaryCategory": "City Tour",
+    "mobilityFriendlyScore": 60,
+    "viewScore": 79,
+    "beautyScore": 78,
+    "experienceScore": 88,
+    "overallRecommendationScore": 77
   },
   {
     "id": "1861909518560019366",
@@ -24,10 +34,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Dewi%20Eco%20Bamboo%20Villa%2C%20Bangli%2C%20Bali%2C%20Bangli%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/The+Dewi+Eco+Bamboo+Villa,+Bangli,+Bali,+Bangli,+Bangli,+Bali,+Indonesia/@-8.214659,115.3654061,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "The Dewi Eco Bamboo Villa ( Official Location )",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.2,
+    "googleReviewCount": 102,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 62,
+    "experienceScore": 79,
+    "overallRecommendationScore": 72
   },
   {
     "id": "1861909353881145289",
@@ -38,11 +58,21 @@
     "island": "Komodo",
     "city": "West Manggarai",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Private%20Sunset%20Boat%20Tour%20at%20Kalong%20Island%20Labuan%20Bajo%20-%20%203%20Hours%2C%20Komodo%2C%20Komodo%2C%20West%20Manggarai%2C%20Komodo%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Private+Sunset+Boat+Tour+at+Kalong+Island+Labuan+Bajo+-++3+Hours,+Komodo,+Komodo,+West+Manggarai,+Komodo,+Indonesia/@-8.5122711,119.6865753,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Komodo Island Tours",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.3,
+    "googleReviewCount": 58,
     "categories": [
       "Boat",
       "Viewpoint"
     ],
-    "primaryCategory": "Boat"
+    "primaryCategory": "Boat",
+    "mobilityFriendlyScore": 54,
+    "viewScore": 97,
+    "beautyScore": 93,
+    "experienceScore": 86,
+    "overallRecommendationScore": 82
   },
   {
     "id": "1861814753791331011",
@@ -53,10 +83,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Double%20U%20Camp%20and%20Villa%2C%20Bangli%2C%20Bali%2C%20Bangli%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Double+U+Camp+and+Villa/@-8.2793252,115.3811331,17z/data=!4m9!3m8!1s0x2dd1f7007fc23299:0xccb2a5678126b637!5m2!4m1!1i2!8m2!3d-8.2793252!4d115.3811331!16s%2Fg%2F11vk7015ny?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Double U Camp and Villa",
+    "googlePlaceMatchMode": "exact",
+    "googleRating": 4.7,
+    "googleReviewCount": 105,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 84,
+    "viewScore": 58,
+    "beautyScore": 65,
+    "experienceScore": 84,
+    "overallRecommendationScore": 75
   },
   {
     "id": "1861814413620682405",
@@ -67,11 +107,21 @@
     "island": "Nusa Penida",
     "city": "Klungkung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peniday%3A%20Nusa%20Penida%20Island%20Adventure%2C%20Nusa%20Penida%2C%20Nusa%20Penida%2C%20Klungkung%2C%20Nusa%20Penida%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Peniday:+Nusa+Penida+Island+Adventure,+Nusa+Penida,+Nusa+Penida,+Klungkung,+Nusa+Penida,+Indonesia/@-8.745573,115.5366661,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Island tour at Nusa penida",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 5,
+    "googleReviewCount": 71,
     "categories": [
       "Island Tour",
       "Boat"
     ],
-    "primaryCategory": "Island Tour"
+    "primaryCategory": "Island Tour",
+    "mobilityFriendlyScore": 40,
+    "viewScore": 98,
+    "beautyScore": 98,
+    "experienceScore": 95,
+    "overallRecommendationScore": 82
   },
   {
     "id": "1861814394905697957",
@@ -82,11 +132,21 @@
     "island": "Bali",
     "city": "Buleleng",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Banyumala%20Twin%20Waterfall%20and%20Coffee%20Plantation%2C%20Sukasada%2C%20Sukasada%2C%20Buleleng%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Banyumala+Twin+Waterfall+and+Coffee+Plantation,+Sukasada,+Sukasada,+Buleleng,+Bali,+Indonesia/@-8.2260662,115.1119541,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Banyumala Waterfall",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 5263,
     "categories": [
       "Waterfall",
       "Cafe"
     ],
-    "primaryCategory": "Waterfall"
+    "primaryCategory": "Waterfall",
+    "mobilityFriendlyScore": 18,
+    "viewScore": 91,
+    "beautyScore": 97,
+    "experienceScore": 94,
+    "overallRecommendationScore": 75
   },
   {
     "id": "1861814352531693221",
@@ -97,11 +157,21 @@
     "island": "Bali",
     "city": "Karangasem",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Tour%3A%20Lempuyang%20%E2%80%93%20Tirta%20Gangga%20%E2%80%93%20Taman%20Ujung%20%E2%80%93%20Lahangan%20Sweet%2C%20Tirta%20Gangga%2C%20Ababi%2C%20Abang%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Bali+Tour:+Lempuyang+%E2%80%93+Tirta+Gangga+%E2%80%93+Taman+Ujung+%E2%80%93+Lahangan+Sweet,+Tirta+Gangga,+Ababi,+Abang,+Karangasem,+Bali,+Indonesia/@-8.4276208,115.6131944,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Taman Ujung",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.6,
+    "googleReviewCount": 10066,
     "categories": [
       "Temple",
       "Viewpoint"
     ],
-    "primaryCategory": "Temple"
+    "primaryCategory": "Temple",
+    "mobilityFriendlyScore": 62,
+    "viewScore": 88,
+    "beautyScore": 90,
+    "experienceScore": 90,
+    "overallRecommendationScore": 83
   },
   {
     "id": "1861814302377265859",
@@ -112,11 +182,21 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Natural%20Beauty%20of%20Kintamani%3A%20Views%20of%20Mount%20Batur%2C%20Telaga%20Waja%20Rafting%2C%20and%20Tegalalang%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/The+Natural+Beauty+of+Kintamani:+Views+of+Mount+Batur,+Telaga+Waja+Rafting,+and+Tegalalang,+Kintamani,+Kintamani,+Bangli,+Bali,+Indonesia/@-8.3172502,115.4012168,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Telaga Waja River Rafting Bali",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.5,
+    "googleReviewCount": 696,
     "categories": [
       "Rafting",
       "Viewpoint"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 24,
+    "viewScore": 80,
+    "beautyScore": 75,
+    "experienceScore": 96,
+    "overallRecommendationScore": 71
   },
   {
     "id": "1861814262720110245",
@@ -127,10 +207,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Batur%20Black%20Lava%20ATV%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Batur+Black+Lava+ATV,+Kintamani,+Kintamani,+Bangli,+Bali,+Indonesia/@-8.2412679,115.3549314,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Batur Black Lava ATV & Jeep Adventure",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 88,
     "categories": [
       "ATV"
     ],
-    "primaryCategory": "ATV"
+    "primaryCategory": "ATV",
+    "mobilityFriendlyScore": 44,
+    "viewScore": 82,
+    "beautyScore": 72,
+    "experienceScore": 97,
+    "overallRecommendationScore": 76
   },
   {
     "id": "1861814242592705219",
@@ -141,10 +231,20 @@
     "island": "Bali",
     "city": "Karangasem",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Telaga%20Waja%20River%20Rafting%20By%20GAR%2C%20Besakih%2C%20Besakih%2C%20Rendang%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Telaga+Waja+River+Rafting+By+GAR,+Besakih,+Besakih,+Rendang,+Karangasem,+Bali,+Indonesia/@-8.4610402,115.4266167,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Rafting bali telaga waja karangasem",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.5,
+    "googleReviewCount": 15,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 28,
+    "viewScore": 71,
+    "beautyScore": 68,
+    "experienceScore": 93,
+    "overallRecommendationScore": 67
   },
   {
     "id": "1861814233238358723",
@@ -155,12 +255,22 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Hidden%20Waterfalls%20Day%20Tour%3A%20Tukad%20Cepung%20%E2%80%93%20Tibumana%20%E2%80%93%20Goa%20Rang%20Reng%20%E2%80%93%20Tegenungan%20%2B%20D%E2%80%99Tukad%20River%20Club%20%26%20Foot%20Massage%2C%20Ubud%2C%20Ubud%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Bali+Hidden+Waterfalls+Day+Tour:+Tukad+Cepung+%E2%80%93+Tibumana+%E2%80%93+Goa+Rang+Reng+%E2%80%93+Tegenungan+%2B+D%E2%80%99Tukad+River+Club+%26+Foot+Massage,+Ubud,+Ubud,+Ubud,+Gianyar,+Bali,+Indonesia/@-8.508305,115.311727,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Goa Rang Reng Waterfall",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.7,
+    "googleReviewCount": 1394,
     "categories": [
       "Waterfall",
       "Cave",
       "Cafe"
     ],
-    "primaryCategory": "Waterfall"
+    "primaryCategory": "Waterfall",
+    "mobilityFriendlyScore": 18,
+    "viewScore": 91,
+    "beautyScore": 97,
+    "experienceScore": 93,
+    "overallRecommendationScore": 75
   },
   {
     "id": "1861814155432970947",
@@ -171,11 +281,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Diving%20%2B%20Fly%20Fish%20%2B%20Parasailing%20Adventure%20%2B%20Jet%20ski%2C%20Tanjung%20Benoa%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Diving+%2B+Fly+Fish+%2B+Parasailing+Adventure+%2B+Jet+ski,+Tanjung+Benoa,+Tanjung+Benoa,+South+Kuta,+Badung,+Bali,+Indonesia/@-8.7723645,115.2230646,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Tanjung Benoa Watersports",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.4,
+    "googleReviewCount": 968,
     "categories": [
       "Jetski",
       "Water Sport"
     ],
-    "primaryCategory": "Jetski"
+    "primaryCategory": "Jetski",
+    "mobilityFriendlyScore": 72,
+    "viewScore": 65,
+    "beautyScore": 60,
+    "experienceScore": 89,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1861814128413253285",
@@ -186,10 +306,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Batur%20Dirt%20Bike%20%2F%20Trail%20Adventure%3A%203-Hour%20Professional%20Conquest%20of%20the%20Black%20Lava%20%26%20Black%20Sand%20Volcanic%20Terrain%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Batur%20Dirt%20Bike%20%2F%20Trail%20Adventure%3A%203-Hour%20Professional%20Conquest%20of%20the%20Black%20Lava%20%26%20Black%20Sand%20Volcanic%20Terrain%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Batur Black Lava ATV & Jeep Adventure",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 88,
     "categories": [
       "ATV"
     ],
-    "primaryCategory": "ATV"
+    "primaryCategory": "ATV",
+    "mobilityFriendlyScore": 44,
+    "viewScore": 82,
+    "beautyScore": 72,
+    "experienceScore": 97,
+    "overallRecommendationScore": 76
   },
   {
     "id": "1861814094391167683",
@@ -200,10 +330,20 @@
     "island": "Bali",
     "city": "Buleleng",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Canyoning%20in%20Gitgit%20and%20Sambangan%20With%20Adventure%20%26%20Spirit%20Bali%2C%20Sukasada%2C%20Sukasada%2C%20Buleleng%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Canyoning+in+Gitgit+and+Sambangan+With+Adventure+%26+Spirit+Bali,+Sukasada,+Sukasada,+Buleleng,+Bali,+Indonesia/@-8.1972354,115.1394302,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Adventure & Spirit Canyoning",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.9,
+    "googleReviewCount": 296,
     "categories": [
       "Cave"
     ],
-    "primaryCategory": "Cave"
+    "primaryCategory": "Cave",
+    "mobilityFriendlyScore": 18,
+    "viewScore": 79,
+    "beautyScore": 88,
+    "experienceScore": 90,
+    "overallRecommendationScore": 69
   },
   {
     "id": "1861814084897349285",
@@ -214,10 +354,20 @@
     "island": "Nusa Penida",
     "city": "Klungkung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nusa%20Penida%20Tour%20Barat%20dari%20Arvi%20Tour%3A%20Jelajahi%20Surga%20Tropis%2C%20Nusa%20Penida%2C%20Nusa%20Penida%2C%20Klungkung%2C%20Nusa%20Penida%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Nusa+Penida+Tour+Barat+dari+Arvi+Tour:+Jelajahi+Surga+Tropis,+Nusa+Penida,+Nusa+Penida,+Klungkung,+Nusa+Penida,+Indonesia/@-8.7183807,115.3931293,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Paket wisata surga nusa penida",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 40,
     "categories": [
       "Island Tour"
     ],
-    "primaryCategory": "Island Tour"
+    "primaryCategory": "Island Tour",
+    "mobilityFriendlyScore": 40,
+    "viewScore": 98,
+    "beautyScore": 98,
+    "experienceScore": 94,
+    "overallRecommendationScore": 82
   },
   {
     "id": "1861814072338554533",
@@ -228,10 +378,20 @@
     "island": "Bali",
     "city": "Karangasem",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Rafting%20Telaga%20Waja%20Tour%20Package%20-%20Ubud%2C%20Besakih%2C%20Besakih%2C%20Rendang%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Bali+Rafting+Telaga+Waja+Tour+Package+-+Ubud,+Besakih,+Besakih,+Rendang,+Karangasem,+Bali,+Indonesia/@-8.5518209,115.3416254,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Rafting bali telaga waja karangasem",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.5,
+    "googleReviewCount": 15,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 28,
+    "viewScore": 71,
+    "beautyScore": 68,
+    "experienceScore": 92,
+    "overallRecommendationScore": 67
   },
   {
     "id": "1861814026914242213",
@@ -242,10 +402,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ayung%20River%20Rafting%20by%20Royal%20Bali%20Adventure%2C%20Abiansemal%2C%20Abiansemal%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Ayung%20River%20Rafting%20by%20Royal%20Bali%20Adventure%2C%20Abiansemal%2C%20Abiansemal%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Ubud Bali Rafting Ayung River",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.9,
+    "googleReviewCount": 364,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 32,
+    "viewScore": 72,
+    "beautyScore": 71,
+    "experienceScore": 94,
+    "overallRecommendationScore": 70
   },
   {
     "id": "1861814004182163109",
@@ -256,11 +426,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%3A%20Dirt%20Bike%20Motorcycle%20Tour%20to%20Black%20Beach%2C%20Kerobokan%2C%20Kerobokan%2C%20North%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Bali:+Dirt+Bike+Motorcycle+Tour+to+Black+Beach,+Kerobokan,+Kerobokan,+North+Kuta,+Badung,+Bali,+Indonesia/@-8.6391107,115.1512129,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bali Dirt Bikes",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.9,
+    "googleReviewCount": 281,
     "categories": [
       "ATV",
       "Viewpoint"
     ],
-    "primaryCategory": "ATV"
+    "primaryCategory": "ATV",
+    "mobilityFriendlyScore": 48,
+    "viewScore": 73,
+    "beautyScore": 66,
+    "experienceScore": 97,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1861813954408357541",
@@ -271,11 +451,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mangrove%20Canoe%20Adventure%20%3A%20A%20Canoe%20Tour%20by%20Day%20or%20Evening%2C%20Jimbaran%2C%20Jimbaran%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Mangrove%20Canoe%20Adventure%20%3A%20A%20Canoe%20Tour%20by%20Day%20or%20Evening%2C%20Jimbaran%2C%20Jimbaran%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Eco Mangrove Ulam Sari (Mangrove Tour & Education)",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 11,
     "categories": [
       "Mangrove",
       "Kayak"
     ],
-    "primaryCategory": "Mangrove"
+    "primaryCategory": "Mangrove",
+    "mobilityFriendlyScore": 76,
+    "viewScore": 75,
+    "beautyScore": 75,
+    "experienceScore": 84,
+    "overallRecommendationScore": 78
   },
   {
     "id": "1861813916247542467",
@@ -286,10 +476,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eco%20Mangrove%20Ulam%20Sari%2C%20Jimbaran%2C%20Jimbaran%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Eco+Mangrove+Ulam+Sari+(Mangrove+Tour+%26+Education)/@-8.7688222,115.1801386,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd245e452eb2ca5:0x2cc853cde523a923!8m2!3d-8.7688222!4d115.1801386!16s%2Fg%2F11ssrc78jp?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Eco Mangrove Ulam Sari (Mangrove Tour & Education)",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.8,
+    "googleReviewCount": 11,
     "categories": [
       "Mangrove"
     ],
-    "primaryCategory": "Mangrove"
+    "primaryCategory": "Mangrove",
+    "mobilityFriendlyScore": 78,
+    "viewScore": 76,
+    "beautyScore": 76,
+    "experienceScore": 84,
+    "overallRecommendationScore": 79
   },
   {
     "id": "1861813909081562789",
@@ -300,11 +500,21 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=After%20hiking%20a%20mountain%20in%20Kintamani%2C%20let's%20head%20to%20a%20Waterfall%20in%20Ubud%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=After%20hiking%20a%20mountain%20in%20Kintamani%2C%20let%27s%20head%20to%20a%20Waterfall%20in%20Ubud%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Kintamani mountain",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.7,
+    "googleReviewCount": 93,
     "categories": [
       "Waterfall",
       "Viewpoint"
     ],
-    "primaryCategory": "Waterfall"
+    "primaryCategory": "Waterfall",
+    "mobilityFriendlyScore": 32,
+    "viewScore": 94,
+    "beautyScore": 96,
+    "experienceScore": 91,
+    "overallRecommendationScore": 78
   },
   {
     "id": "1861813844266994371",
@@ -315,11 +525,21 @@
     "island": "Bali",
     "city": "Karangasem",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tenganan%20Village%20-%20Tirta%20Gangga%20Water%20Palace%20One%20Day%20Trip%2C%20Candidasa%2C%20Candidasa%2C%20Manggis%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Tenganan+Village+-+Tirta+Gangga+Water+Palace+One+Day+Trip,+Candidasa,+Candidasa,+Manggis,+Karangasem,+Bali,+Indonesia/@-8.4439473,115.5771562,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Tirta Gangga",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.6,
+    "googleReviewCount": 22426,
     "categories": [
       "Culture Village",
       "Temple"
     ],
-    "primaryCategory": "Culture Village"
+    "primaryCategory": "Culture Village",
+    "mobilityFriendlyScore": 74,
+    "viewScore": 78,
+    "beautyScore": 82,
+    "experienceScore": 87,
+    "overallRecommendationScore": 81
   },
   {
     "id": "1861813772061002435",
@@ -330,10 +550,20 @@
     "island": "Bali",
     "city": "Karangasem",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Telaga%20Waja%20River%20Rafting%20by%20BTR%2C%20Besakih%2C%20Besakih%2C%20Rendang%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Telaga%20Waja%20River%20Rafting%20by%20BTR%2C%20Besakih%2C%20Besakih%2C%20Rendang%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Rafting bali telaga waja karangasem",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.5,
+    "googleReviewCount": 15,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 28,
+    "viewScore": 71,
+    "beautyScore": 68,
+    "experienceScore": 92,
+    "overallRecommendationScore": 67
   },
   {
     "id": "1861813155493071555",
@@ -344,10 +574,20 @@
     "island": "Bali",
     "city": "Karangasem",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Telaga%20Waja%20Rafting%2C%20Sidemen%2C%20Sidemen%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Telaga%20Waja%20Rafting%2C%20Sidemen%2C%20Sidemen%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Rafting bali telaga waja karangasem",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.5,
+    "googleReviewCount": 15,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 28,
+    "viewScore": 71,
+    "beautyScore": 68,
+    "experienceScore": 93,
+    "overallRecommendationScore": 67
   },
   {
     "id": "1861810095901384357",
@@ -358,11 +598,21 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Boat%20Rental%20and%20Guide%20Tour%20to%20Trunyan%20Village%20%26%20Dewi%20Danu%20Statue%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Boat+Rental+and+Guide+Tour+to+Trunyan+Village+%26+Dewi+Danu+Statue,+Kintamani,+Kintamani,+Bangli,+Bali,+Indonesia/@-8.2261285,115.41382,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Aji Kintamani Boat Center",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 5,
+    "googleReviewCount": 16,
     "categories": [
       "Boat",
       "Culture Village"
     ],
-    "primaryCategory": "Boat"
+    "primaryCategory": "Boat",
+    "mobilityFriendlyScore": 60,
+    "viewScore": 92,
+    "beautyScore": 89,
+    "experienceScore": 91,
+    "overallRecommendationScore": 83
   },
   {
     "id": "1861810034435967683",
@@ -373,10 +623,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pengalaman%20Mandi%20Air%20Hangat%20di%20Ubud%2C%20Sayan%2C%20Sayan%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Villa+Mandi+Ubud/@-8.5147539,115.2504266,17z/data=!4m9!3m8!1s0x2dd23d10b33184af:0x61edb0d5fa27a188!5m2!4m1!1i2!8m2!3d-8.5147539!4d115.2504266!16s%2Fg%2F1pp2t_8mb?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Villa Mandi Ubud",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 3.9,
+    "googleReviewCount": 476,
     "categories": [
       "Hot Spring"
     ],
-    "primaryCategory": "Hot Spring"
+    "primaryCategory": "Hot Spring",
+    "mobilityFriendlyScore": 78,
+    "viewScore": 60,
+    "beautyScore": 65,
+    "experienceScore": 77,
+    "overallRecommendationScore": 71
   },
   {
     "id": "1861810007856663235",
@@ -387,11 +647,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parasailing%20Adventure%20%2B%20Jet%20ski%20By%20Bali%20Best%20Adventure%2C%20Tanjung%20Benoa%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Parasailing+Adventure+%2B+Jet+ski+By+Bali+Best+Adventure,+Tanjung+Benoa,+Tanjung+Benoa,+South+Kuta,+Badung,+Bali,+Indonesia/@-8.7543113,115.2286701,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bali Water Sport Tanjung Benoa",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.7,
+    "googleReviewCount": 519,
     "categories": [
       "Jetski",
       "Water Sport"
     ],
-    "primaryCategory": "Jetski"
+    "primaryCategory": "Jetski",
+    "mobilityFriendlyScore": 72,
+    "viewScore": 65,
+    "beautyScore": 61,
+    "experienceScore": 91,
+    "overallRecommendationScore": 75
   },
   {
     "id": "1861809919968157349",
@@ -402,10 +672,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tukad%20Cepung%20Waterfall%2C%20Tembuku%2C%20Tembuku%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Tukad%20Cepung%20Waterfall%2C%20Tembuku%2C%20Tembuku%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Tukad Cepung Waterfall",
+    "googlePlaceMatchMode": "exact",
+    "googleRating": 4.6,
+    "googleReviewCount": 5033,
     "categories": [
       "Waterfall"
     ],
-    "primaryCategory": "Waterfall"
+    "primaryCategory": "Waterfall",
+    "mobilityFriendlyScore": 20,
+    "viewScore": 92,
+    "beautyScore": 98,
+    "experienceScore": 92,
+    "overallRecommendationScore": 75
   },
   {
     "id": "1861809913556115109",
@@ -416,10 +696,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Private%20Surfing%20lesson%20Orange%20Surf%20School%20Bali%2C%20Kuta%2C%20Kuta%2C%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Private+Surfing+lesson+Orange+Surf+School+Bali,+Kuta,+Kuta,+Kuta,+Badung,+Bali,+Indonesia/@-8.7147231,115.1693506,16z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Orange Surf School Bali",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.9,
+    "googleReviewCount": 41,
     "categories": [
       "Surf"
     ],
-    "primaryCategory": "Surf"
+    "primaryCategory": "Surf",
+    "mobilityFriendlyScore": 64,
+    "viewScore": 72,
+    "beautyScore": 69,
+    "experienceScore": 90,
+    "overallRecommendationScore": 76
   },
   {
     "id": "1861809880520739523",
@@ -430,10 +720,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=27%20Surf%20School%20Bali%20Free%20Photo%2C%20Kuta%2C%20Kuta%2C%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/27+Surf+School+%7C+1+on+1+Lesson/@-8.7144256,115.1678877,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd247a782e7b9b5:0xfa5cefc37cfdb708!8m2!3d-8.7144256!4d115.1678877!16s%2Fg%2F11fcrtnpvt?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "27 Surf School | 1 on 1 Lesson",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.8,
+    "googleReviewCount": 392,
     "categories": [
       "Surf"
     ],
-    "primaryCategory": "Surf"
+    "primaryCategory": "Surf",
+    "mobilityFriendlyScore": 66,
+    "viewScore": 72,
+    "beautyScore": 68,
+    "experienceScore": 90,
+    "overallRecommendationScore": 76
   },
   {
     "id": "1861809844075383491",
@@ -444,10 +744,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Picheaven%20Bali%20Swing%20Tickets%2C%20Abiansemal%2C%20Abiansemal%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Picheaven+Bali+-+Swing/@-8.4896278,115.2402645,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd23d9050941a37:0xe7cea59e0b8d692!8m2!3d-8.4896278!4d115.2402645!16s%2Fg%2F11hf397377?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Picheaven Bali - Swing",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.5,
+    "googleReviewCount": 289,
     "categories": [
       "Swing"
     ],
-    "primaryCategory": "Swing"
+    "primaryCategory": "Swing",
+    "mobilityFriendlyScore": 60,
+    "viewScore": 80,
+    "beautyScore": 79,
+    "experienceScore": 84,
+    "overallRecommendationScore": 76
   },
   {
     "id": "1861809806814224037",
@@ -458,10 +768,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hidden%20Canyon%20Beji%20Guwang%2C%20Sukawati%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Hidden+Canyon+Beji+Guwang/@-8.609527,115.2890415,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd2157e9462182d:0x6e3602576c543e7b!8m2!3d-8.609527!4d115.2890415!16s%2Fg%2F11bwgwfhjx?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Hidden Canyon Beji Guwang",
+    "googlePlaceMatchMode": "exact",
+    "googleRating": 4.5,
+    "googleReviewCount": 3041,
     "categories": [
       "Cave"
     ],
-    "primaryCategory": "Cave"
+    "primaryCategory": "Cave",
+    "mobilityFriendlyScore": 18,
+    "viewScore": 80,
+    "beautyScore": 87,
+    "experienceScore": 89,
+    "overallRecommendationScore": 69
   },
   {
     "id": "1861809705782877861",
@@ -472,10 +792,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tlaga%20Singha%20Tropical%20River%20Club%2C%20Celuk%2C%20Celuk%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Tlaga+Singha+Bali/@-8.5914707,115.2677026,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd23f2ac7b3c72b:0x85775d4103757d72!8m2!3d-8.5914707!4d115.2677026!16s%2Fg%2F11lglxjhhj?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Tlaga Singha Bali",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.6,
+    "googleReviewCount": 1817,
     "categories": [
       "Cafe"
     ],
-    "primaryCategory": "Cafe"
+    "primaryCategory": "Cafe",
+    "mobilityFriendlyScore": 94,
+    "viewScore": 76,
+    "beautyScore": 80,
+    "experienceScore": 85,
+    "overallRecommendationScore": 84
   },
   {
     "id": "1861809656782932675",
@@ -486,10 +816,20 @@
     "island": "Bali",
     "city": "Tabanan",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dusun%20Bedugul%20Asri%2C%20Bedugul%2C%20Bedugul%2C%20Baturiti%2C%20Tabanan%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Bedugul+Asri+Village/@-8.2620814,115.1626348,17z/data=!4m9!3m8!1s0x2dd1892cee89e455:0xb22100c5b7ee9dc1!5m2!4m1!1i2!8m2!3d-8.2620814!4d115.1626348!16s%2Fg%2F11qsjmp9qz?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bedugul Asri Village",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.8,
+    "googleReviewCount": 1208,
     "categories": [
       "Cafe"
     ],
-    "primaryCategory": "Cafe"
+    "primaryCategory": "Cafe",
+    "mobilityFriendlyScore": 84,
+    "viewScore": 76,
+    "beautyScore": 80,
+    "experienceScore": 86,
+    "overallRecommendationScore": 82
   },
   {
     "id": "1861809634007861955",
@@ -500,10 +840,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cinze%20Natural%20Hot%20Spring%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Cinze+Villas+and+Hot+Spring/@-8.2442596,115.3944824,17z/data=!4m9!3m8!1s0x2dd1f7007cf472db:0xbf73e96eff314130!5m2!4m1!1i2!8m2!3d-8.2442596!4d115.3944824!16s%2Fg%2F11x5ysy3y6?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Cinze Villas and Hot Spring",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.5,
+    "googleReviewCount": 171,
     "categories": [
       "Hot Spring"
     ],
-    "primaryCategory": "Hot Spring"
+    "primaryCategory": "Hot Spring",
+    "mobilityFriendlyScore": 74,
+    "viewScore": 69,
+    "beautyScore": 74,
+    "experienceScore": 84,
+    "overallRecommendationScore": 77
   },
   {
     "id": "1861809613132810947",
@@ -514,10 +864,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Reptile%20Park%2C%20Batubulan%2C%20Batubulan%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Bali+Reptile+Park/@-8.599717,115.251922,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd23f6576dd81bf:0xdf1600f4ad7f3177!8m2!3d-8.599717!4d115.251922!16s%2Fg%2F1hm4j_7xy?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bali Reptile Park",
+    "googlePlaceMatchMode": "exact",
+    "googleRating": 4.8,
+    "googleReviewCount": 1080,
     "categories": [
       "Zoo"
     ],
-    "primaryCategory": "Zoo"
+    "primaryCategory": "Zoo",
+    "mobilityFriendlyScore": 98,
+    "viewScore": 62,
+    "beautyScore": 70,
+    "experienceScore": 94,
+    "overallRecommendationScore": 84
   },
   {
     "id": "1861809596347206339",
@@ -528,10 +888,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=River%20Tubing%20Bali%20-%20Exciting%20Tubing%20Tours%20on%20the%20Pakerisan%20River%2C%20Tampaksiring%2C%20Tampaksiring%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/River+Tubing+Bali+-+Exciting+Tubing+Tours+on+the+Pakerisan+River,+Tampaksiring,+Tampaksiring,+Gianyar,+Bali,+Indonesia/@-8.5408646,115.2820183,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Lazy River Tubing Pakerisan Bali",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 5,
+    "googleReviewCount": 2,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 30,
+    "viewScore": 71,
+    "beautyScore": 70,
+    "experienceScore": 94,
+    "overallRecommendationScore": 69
   },
   {
     "id": "1861809568263195331",
@@ -542,10 +912,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lunamoon%20Kintamani%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/LUNAMOON/@-8.2706286,115.344762,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd1f5903056733d:0x8c36849aeb290ea9!8m2!3d-8.2706286!4d115.344762!16s%2Fg%2F11vjzrp9_0?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "LUNAMOON",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.5,
+    "googleReviewCount": 1374,
     "categories": [
       "Cafe"
     ],
-    "primaryCategory": "Cafe"
+    "primaryCategory": "Cafe",
+    "mobilityFriendlyScore": 80,
+    "viewScore": 85,
+    "beautyScore": 86,
+    "experienceScore": 84,
+    "overallRecommendationScore": 84
   },
   {
     "id": "1861809546534592165",
@@ -556,11 +936,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sunset%20Dinner%20Voucher%20-%20Kampoeng%20Seafood%20Jimbaran%2C%20Jimbaran%2C%20Jimbaran%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Sunset%20Dinner%20Voucher%20-%20Kampoeng%20Seafood%20Jimbaran%2C%20Jimbaran%2C%20Jimbaran%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Jimbaran",
+    "googlePlaceMatchMode": "area",
+    "googleRating": null,
+    "googleReviewCount": null,
     "categories": [
       "Cafe",
       "Viewpoint"
     ],
-    "primaryCategory": "Cafe"
+    "primaryCategory": "Cafe",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 75,
+    "beautyScore": 77,
+    "experienceScore": 77,
+    "overallRecommendationScore": 78
   },
   {
     "id": "1861809521571154627",
@@ -571,10 +961,20 @@
     "island": "Bali",
     "city": "Karangasem",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Telaga%20Waja%20Rafting%20by%20Bali%20Best%20Adventure%2C%20Besakih%2C%20Besakih%2C%20Rendang%2C%20Karangasem%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Telaga+Waja+Rafting+by+Bali+Best+Adventure,+Besakih,+Besakih,+Rendang,+Karangasem,+Bali,+Indonesia/@-8.5520958,115.3416254,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Rafting bali telaga waja karangasem",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.5,
+    "googleReviewCount": 15,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 30,
+    "viewScore": 72,
+    "beautyScore": 69,
+    "experienceScore": 92,
+    "overallRecommendationScore": 68
   },
   {
     "id": "1861809512163330755",
@@ -585,11 +985,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Uju%20Bali%20Private%20Tour%20Full%20Day%20Trip%20(Kintamani%20-%20Penglipuran%20Village%20-%20Ubud)%2C%20Kuta%2C%20Kuta%2C%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Uju+Bali+Private+Tour+Full+Day+Trip+(Kintamani+-+Penglipuran+Village+-+Ubud),+Kuta,+Kuta,+Kuta,+Badung,+Bali,+Indonesia/@-8.611142,115.2990084,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Penglipuran Village",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 30182,
     "categories": [
       "Culture Village",
       "Viewpoint"
     ],
-    "primaryCategory": "Culture Village"
+    "primaryCategory": "Culture Village",
+    "mobilityFriendlyScore": 74,
+    "viewScore": 78,
+    "beautyScore": 82,
+    "experienceScore": 88,
+    "overallRecommendationScore": 81
   },
   {
     "id": "1861809464581037733",
@@ -600,11 +1010,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parasailing%20Adventure%20%2B%20Ocean%20Walker%20%2B%20Jet%20ski%2C%20Tanjung%20Benoa%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Parasailing+Adventure+%2B+Ocean+Walker+%2B+Jet+ski,+Tanjung+Benoa,+Tanjung+Benoa,+South+Kuta,+Badung,+Bali,+Indonesia/@-8.7700716,115.2230646,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Parasailing Tanjung Benoa",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 5,
+    "googleReviewCount": 2,
     "categories": [
       "Jetski",
       "Water Sport"
     ],
-    "primaryCategory": "Jetski"
+    "primaryCategory": "Jetski",
+    "mobilityFriendlyScore": 72,
+    "viewScore": 65,
+    "beautyScore": 62,
+    "experienceScore": 88,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1861809419210214083",
@@ -615,10 +1035,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Batur%20Black%20Lava%20Quad%20Bike%20ATV%20Adventure%20Kintamani%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Batur%20Black%20Lava%20Quad%20Bike%20ATV%20Adventure%20Kintamani%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Kintamani",
+    "googlePlaceMatchMode": "area",
+    "googleRating": null,
+    "googleReviewCount": null,
     "categories": [
       "ATV"
     ],
-    "primaryCategory": "ATV"
+    "primaryCategory": "ATV",
+    "mobilityFriendlyScore": 44,
+    "viewScore": 82,
+    "beautyScore": 70,
+    "experienceScore": 90,
+    "overallRecommendationScore": 73
   },
   {
     "id": "1861809334361541315",
@@ -629,10 +1059,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Sea%20Walker%20(Underwater%20Experience)%20by%20Bali%20Best%20Adventure%2C%20Tanjung%20Benoa%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Sea%20Walker%20(Underwater%20Experience)%20by%20Bali%20Best%20Adventure%2C%20Tanjung%20Benoa%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Tanjung Benoa",
+    "googlePlaceMatchMode": "area",
+    "googleRating": null,
+    "googleReviewCount": null,
     "categories": [
       "Water Sport"
     ],
-    "primaryCategory": "Water Sport"
+    "primaryCategory": "Water Sport",
+    "mobilityFriendlyScore": 74,
+    "viewScore": 63,
+    "beautyScore": 57,
+    "experienceScore": 83,
+    "overallRecommendationScore": 72
   },
   {
     "id": "1861809318333008579",
@@ -643,11 +1083,21 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Paket%20Rafting%20dan%20ATV%20Ride%20Adventure%2C%20Sukawati%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Paket+Rafting+dan+ATV+Ride+Adventure,+Sukawati,+Sukawati,+Gianyar,+Bali,+Indonesia/@-8.5666121,115.2438299,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "ATV Wahana Bali Adventure",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.7,
+    "googleReviewCount": 591,
     "categories": [
       "ATV",
       "Rafting"
     ],
-    "primaryCategory": "ATV"
+    "primaryCategory": "ATV",
+    "mobilityFriendlyScore": 54,
+    "viewScore": 69,
+    "beautyScore": 65,
+    "experienceScore": 94,
+    "overallRecommendationScore": 73
   },
   {
     "id": "1861809310852456101",
@@ -658,10 +1108,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Watersport%20Bali%20by%20Mawar%20Kuning%2C%20Tanjung%20Benoa%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Watersport+Bali+by+Mawar+Kuning,+Tanjung+Benoa,+Tanjung+Benoa,+South+Kuta,+Badung,+Bali,+Indonesia/@-8.7651083,115.2210199,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bali Water Sport Tanjung Benoa",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.7,
+    "googleReviewCount": 519,
     "categories": [
       "Water Sport"
     ],
-    "primaryCategory": "Water Sport"
+    "primaryCategory": "Water Sport",
+    "mobilityFriendlyScore": 74,
+    "viewScore": 63,
+    "beautyScore": 59,
+    "experienceScore": 90,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1861809283851624101",
@@ -672,11 +1132,21 @@
     "island": "Bali",
     "city": "Denpasar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bounty%20Dinner%20Cruise%20Bali%2C%20South%20Denpasar%2C%20South%20Denpasar%2C%20Denpasar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Bounty+Cruises/@-8.7400163,115.2129884,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd243dd60bde647:0xed1404af14a989!8m2!3d-8.7400163!4d115.2129884!16s%2Fg%2F1ptyjvhpg?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bounty Cruises",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.1,
+    "googleReviewCount": 2053,
     "categories": [
       "Cruise",
       "Cafe"
     ],
-    "primaryCategory": "Cruise"
+    "primaryCategory": "Cruise",
+    "mobilityFriendlyScore": 88,
+    "viewScore": 78,
+    "beautyScore": 74,
+    "experienceScore": 84,
+    "overallRecommendationScore": 82
   },
   {
     "id": "1861809239722314435",
@@ -687,10 +1157,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Surfing%20Class%20at%207Surf%20Bali%2C%20Legian%2C%20Legian%2C%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Surfing%20Class%20at%207Surf%20Bali%2C%20Legian%2C%20Legian%2C%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "S Surf School Bali",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.9,
+    "googleReviewCount": 114,
     "categories": [
       "Surf"
     ],
-    "primaryCategory": "Surf"
+    "primaryCategory": "Surf",
+    "mobilityFriendlyScore": 62,
+    "viewScore": 71,
+    "beautyScore": 68,
+    "experienceScore": 90,
+    "overallRecommendationScore": 75
   },
   {
     "id": "1861809211371953829",
@@ -701,11 +1181,21 @@
     "island": "Bali",
     "city": "Tabanan",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kecak%20%26%20Fire%20Dance%20ticket%20Tanah%20Lot%20Bali%2C%20Tanah%20Lot%2C%20Beraban%2C%20Kediri%2C%20Tabanan%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Kecak%20%26%20Fire%20Dance%20ticket%20Tanah%20Lot%20Bali%2C%20Tanah%20Lot%2C%20Beraban%2C%20Kediri%2C%20Tabanan%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Tanah lot Kecak Dance",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.6,
+    "googleReviewCount": 79,
     "categories": [
       "Temple",
       "Performance"
     ],
-    "primaryCategory": "Temple"
+    "primaryCategory": "Temple",
+    "mobilityFriendlyScore": 66,
+    "viewScore": 88,
+    "beautyScore": 92,
+    "experienceScore": 88,
+    "overallRecommendationScore": 83
   },
   {
     "id": "1861809206779190949",
@@ -716,10 +1206,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ayung%20River%20Rafting%20Tickets%20in%20Ubud%2C%20Bali%2C%20Kedewatan%2C%20Kedewatan%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Ayung%20River%20Rafting%20Tickets%20in%20Ubud%2C%20Bali%2C%20Kedewatan%2C%20Kedewatan%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Ubud Bali Rafting Ayung River",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.9,
+    "googleReviewCount": 364,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 32,
+    "viewScore": 72,
+    "beautyScore": 71,
+    "experienceScore": 94,
+    "overallRecommendationScore": 70
   },
   {
     "id": "1861809193688779459",
@@ -730,10 +1230,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rafting%20on%20Ayung%20River%20by%20SOBEK%20Adventure%2C%20Kedewatan%2C%20Kedewatan%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Rafting%20on%20Ayung%20River%20by%20SOBEK%20Adventure%2C%20Kedewatan%2C%20Kedewatan%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Ubud Bali Rafting Ayung River",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.9,
+    "googleReviewCount": 364,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 30,
+    "viewScore": 71,
+    "beautyScore": 70,
+    "experienceScore": 94,
+    "overallRecommendationScore": 69
   },
   {
     "id": "1861809097995733699",
@@ -744,10 +1254,20 @@
     "island": "Bali",
     "city": "Buleleng",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lovina%20Dolphin%20Tour%20by%20Bali%20Best%20Adventure%2C%20Lovina%2C%20Lovina%2C%20Banjar%2C%20Buleleng%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Lovina%20Dolphin%20Tour%20by%20Bali%20Best%20Adventure%2C%20Lovina%2C%20Lovina%2C%20Banjar%2C%20Buleleng%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Lovina dolphin tours",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.9,
+    "googleReviewCount": 864,
     "categories": [
       "Dolphin"
     ],
-    "primaryCategory": "Dolphin"
+    "primaryCategory": "Dolphin",
+    "mobilityFriendlyScore": 68,
+    "viewScore": 97,
+    "beautyScore": 84,
+    "experienceScore": 98,
+    "overallRecommendationScore": 88
   },
   {
     "id": "1861809046093307557",
@@ -758,10 +1278,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ayung%20River%20Rafting%20by%20Bali%20Best%20Adventure%2C%20Kedewatan%2C%20Kedewatan%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Ayung%20River%20Rafting%20by%20Bali%20Best%20Adventure%2C%20Kedewatan%2C%20Kedewatan%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Ubud Bali Rafting Ayung River",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.9,
+    "googleReviewCount": 364,
     "categories": [
       "Rafting"
     ],
-    "primaryCategory": "Rafting"
+    "primaryCategory": "Rafting",
+    "mobilityFriendlyScore": 32,
+    "viewScore": 72,
+    "beautyScore": 71,
+    "experienceScore": 94,
+    "overallRecommendationScore": 70
   },
   {
     "id": "1861808992467045059",
@@ -772,10 +1302,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Safari%20Park%20-%20International%20Tourists%2C%20Keramas%2C%20Keramas%2C%20Blahbatuh%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/The+Amazing+Taman+Safari+Bali/@-8.5822029,115.3472573,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd21446b81f7d39:0x34b39c786c2e54ec!8m2!3d-8.5822029!4d115.3472573!16s%2Fm%2F0lkqtcl?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "The Amazing Taman Safari Bali",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.5,
+    "googleReviewCount": 23823,
     "categories": [
       "Zoo"
     ],
-    "primaryCategory": "Zoo"
+    "primaryCategory": "Zoo",
+    "mobilityFriendlyScore": 98,
+    "viewScore": 62,
+    "beautyScore": 69,
+    "experienceScore": 92,
+    "overallRecommendationScore": 83
   },
   {
     "id": "1861808950275481253",
@@ -786,11 +1326,21 @@
     "island": "Bali",
     "city": "Denpasar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Phinisi%20Cruise%3A%20Sailor%20Dinner%20Cruise%20Tickets%2C%20South%20Denpasar%2C%20South%20Denpasar%2C%20Denpasar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Phinisi+Cruise:+Sailor+Dinner+Cruise+Tickets,+South+Denpasar,+South+Denpasar,+Denpasar,+Bali,+Indonesia/@-8.7203517,115.1971775,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Sea Safari Cruise",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.4,
+    "googleReviewCount": 270,
     "categories": [
       "Cruise",
       "Cafe"
     ],
-    "primaryCategory": "Cruise"
+    "primaryCategory": "Cruise",
+    "mobilityFriendlyScore": 76,
+    "viewScore": 77,
+    "beautyScore": 74,
+    "experienceScore": 85,
+    "overallRecommendationScore": 79
   },
   {
     "id": "1861808931062423205",
@@ -801,10 +1351,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Watersport%20by%20Dbalinusadua%2C%20Tanjung%20Benoa%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Bali+Watersport+by+Dbalinusadua,+Tanjung+Benoa,+Tanjung+Benoa,+South+Kuta,+Badung,+Bali,+Indonesia/@-8.70428,115.2427322,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Tanjung benoa watersport Bali",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 60,
     "categories": [
       "Water Sport"
     ],
-    "primaryCategory": "Water Sport"
+    "primaryCategory": "Water Sport",
+    "mobilityFriendlyScore": 74,
+    "viewScore": 63,
+    "beautyScore": 59,
+    "experienceScore": 89,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1861808914907012773",
@@ -815,10 +1375,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tanjung%20Benoa%20Watersports%20by%20Pandan%20Sari%20Bali%2C%20Tanjung%20Benoa%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Tanjung+Benoa+Watersports+by+Pandan+Sari+Bali,+Tanjung+Benoa,+Tanjung+Benoa,+South+Kuta,+Badung,+Bali,+Indonesia/@-8.7581388,115.2210199,16z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bali Water Sport Tanjung Benoa",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.7,
+    "googleReviewCount": 519,
     "categories": [
       "Water Sport"
     ],
-    "primaryCategory": "Water Sport"
+    "primaryCategory": "Water Sport",
+    "mobilityFriendlyScore": 74,
+    "viewScore": 63,
+    "beautyScore": 59,
+    "experienceScore": 90,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1861808799953734339",
@@ -829,11 +1399,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sunset%20Dinner%20at%20The%20Cuisine%20Jimbaran%2C%20Jimbaran%2C%20Jimbaran%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Sunset+Dinner+at+The+Cuisine+Jimbaran,+Jimbaran,+Jimbaran,+South+Kuta,+Badung,+Bali,+Indonesia/@-8.7608667,115.1696197,18z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Sunset Dinner Beach",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.4,
+    "googleReviewCount": 229,
     "categories": [
       "Cafe",
       "Viewpoint"
     ],
-    "primaryCategory": "Cafe"
+    "primaryCategory": "Cafe",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 75,
+    "beautyScore": 78,
+    "experienceScore": 82,
+    "overallRecommendationScore": 80
   },
   {
     "id": "1861808789747932837",
@@ -844,10 +1424,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Bird%20Park%20Tickets%2C%20Batubulan%2C%20Batubulan%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Bali+Bird+Park/@-8.5996431,115.2520569,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd23e4efac54c0f:0x5f8920acf656382c!8m2!3d-8.5996431!4d115.2520569!16s%2Fm%2F0_fn070?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bali Bird Park",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.6,
+    "googleReviewCount": 13880,
     "categories": [
       "Zoo"
     ],
-    "primaryCategory": "Zoo"
+    "primaryCategory": "Zoo",
+    "mobilityFriendlyScore": 98,
+    "viewScore": 62,
+    "beautyScore": 70,
+    "experienceScore": 92,
+    "overallRecommendationScore": 83
   },
   {
     "id": "1861808715366156995",
@@ -858,11 +1448,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Devdan%20Show%20'Treasure%20of%20the%20Archipelago'%2C%20Nusa%20Dua%20Beach%2C%20Nusa%20Dua%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Devdan+Show+at+Bali+Nusa+Dua+Theatre/@-8.800629,115.2338681,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd243287842741f:0x6e2e734775c56a03!8m2!3d-8.800629!4d115.2338681!16s%2Fg%2F1pzqyhkgp?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Devdan Show at Bali Nusa Dua Theatre",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.8,
+    "googleReviewCount": 2370,
     "categories": [
       "Performance",
       "Culture"
     ],
-    "primaryCategory": "Performance"
+    "primaryCategory": "Performance",
+    "mobilityFriendlyScore": 92,
+    "viewScore": 70,
+    "beautyScore": 70,
+    "experienceScore": 90,
+    "overallRecommendationScore": 83
   },
   {
     "id": "1861808684825321125",
@@ -873,10 +1473,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ubud%20ATV%20Ride%20Adventure%20by%20ATV%20Ride%20Bali%20-%2090%20Minutes%2C%20Sukawati%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Ubud%20ATV%20Ride%20Adventure%20by%20ATV%20Ride%20Bali%20-%2090%20Minutes%2C%20Sukawati%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Bali ATV Ubud",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.6,
+    "googleReviewCount": 52,
     "categories": [
       "ATV"
     ],
-    "primaryCategory": "ATV"
+    "primaryCategory": "ATV",
+    "mobilityFriendlyScore": 54,
+    "viewScore": 69,
+    "beautyScore": 65,
+    "experienceScore": 92,
+    "overallRecommendationScore": 73
   },
   {
     "id": "1861808668969803429",
@@ -887,10 +1497,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Timezone%20Mal%20Bali%20Galeria%2C%20Kuta%2C%20Kuta%2C%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Timezone/@-8.7233219,115.1830922,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd246b21da1ad65:0x11646877a0eaa4b6!8m2!3d-8.7233219!4d115.1830922!16s%2Fg%2F1td1ynzf?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Timezone",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.4,
+    "googleReviewCount": 462,
     "categories": [
       "Theme Park"
     ],
-    "primaryCategory": "Theme Park"
+    "primaryCategory": "Theme Park",
+    "mobilityFriendlyScore": 98,
+    "viewScore": 56,
+    "beautyScore": 55,
+    "experienceScore": 91,
+    "overallRecommendationScore": 79
   },
   {
     "id": "1861808665295604419",
@@ -901,11 +1521,21 @@
     "island": "Bali",
     "city": "Tabanan",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Farm%20House%20Tickets%2C%20Bedugul%2C%20Bedugul%2C%20Baturiti%2C%20Tabanan%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Bali+Farm+House+Tickets,+Bedugul,+Bedugul,+Baturiti,+Tabanan,+Bali,+Indonesia/@-8.2688378,115.1512298,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Bedugul Farm",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 3.8,
+    "googleReviewCount": 10,
     "categories": [
       "Farm",
       "Cafe"
     ],
-    "primaryCategory": "Farm"
+    "primaryCategory": "Farm",
+    "mobilityFriendlyScore": 88,
+    "viewScore": 65,
+    "beautyScore": 67,
+    "experienceScore": 74,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1861808660687112899",
@@ -916,10 +1546,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Waterbom%20Bali%20Tickets%2C%20Kuta%2C%20Kuta%2C%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Waterbom+Bali/@-8.7285815,115.1692888,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd246a3ee8f82df:0x1291d693f3407fa5!8m2!3d-8.7285815!4d115.1692888!16s%2Fg%2F1tdz276n?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Waterbom Bali",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.7,
+    "googleReviewCount": 17897,
     "categories": [
       "Theme Park"
     ],
-    "primaryCategory": "Theme Park"
+    "primaryCategory": "Theme Park",
+    "mobilityFriendlyScore": 98,
+    "viewScore": 56,
+    "beautyScore": 56,
+    "experienceScore": 95,
+    "overallRecommendationScore": 80
   },
   {
     "id": "1861808611525664421",
@@ -930,11 +1570,21 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Batur%20Kintamani%20Sunrise%20Jeep%20Tour%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Batur%20Kintamani%20Sunrise%20Jeep%20Tour%2C%20Kintamani%2C%20Kintamani%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Batur Jeep Tour",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.9,
+    "googleReviewCount": 82,
     "categories": [
       "Jeep",
       "Viewpoint"
     ],
-    "primaryCategory": "Jeep"
+    "primaryCategory": "Jeep",
+    "mobilityFriendlyScore": 58,
+    "viewScore": 97,
+    "beautyScore": 84,
+    "experienceScore": 97,
+    "overallRecommendationScore": 85
   },
   {
     "id": "1861808596099014309",
@@ -945,10 +1595,20 @@
     "island": "Bali",
     "city": "Bangli",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penglipuran%20Village%20Package%2C%20Bangli%2C%20Bangli%2C%20Bangli%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/Penglipuran+Village+Package,+Bangli,+Bangli,+Bangli,+Bali,+Indonesia/@-8.4245322,115.3588926,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Penglipuran Village",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 30182,
     "categories": [
       "Culture Village"
     ],
-    "primaryCategory": "Culture Village"
+    "primaryCategory": "Culture Village",
+    "mobilityFriendlyScore": 78,
+    "viewScore": 69,
+    "beautyScore": 75,
+    "experienceScore": 88,
+    "overallRecommendationScore": 79
   },
   {
     "id": "1861808508172782275",
@@ -959,11 +1619,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Uluwatu%20Bali%20Sunset%20Kecak%20Fire%20Dance%20Tour%2C%20Pecatu%2C%20Pecatu%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Uluwatu%20Bali%20Sunset%20Kecak%20Fire%20Dance%20Tour%2C%20Pecatu%2C%20Pecatu%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Kecak Fire Dance Sunset Uluwatu",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.4,
+    "googleReviewCount": 47,
     "categories": [
       "Temple",
       "Performance"
     ],
-    "primaryCategory": "Temple"
+    "primaryCategory": "Temple",
+    "mobilityFriendlyScore": 64,
+    "viewScore": 87,
+    "beautyScore": 90,
+    "experienceScore": 86,
+    "overallRecommendationScore": 82
   },
   {
     "id": "1861808504619146917",
@@ -974,11 +1644,21 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kecak%20and%20Fire%20Dance%20Performance%20at%20Uluwatu%20Temple%20Tickets%2C%20Pecatu%2C%20Pecatu%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Kecak%20and%20Fire%20Dance%20Performance%20at%20Uluwatu%20Temple%20Tickets%2C%20Pecatu%2C%20Pecatu%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Kecak Dance Amphitheater Uluwatu Temple",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.5,
+    "googleReviewCount": 1916,
     "categories": [
       "Temple",
       "Performance"
     ],
-    "primaryCategory": "Temple"
+    "primaryCategory": "Temple",
+    "mobilityFriendlyScore": 64,
+    "viewScore": 87,
+    "beautyScore": 90,
+    "experienceScore": 89,
+    "overallRecommendationScore": 83
   },
   {
     "id": "1861808479484791491",
@@ -989,10 +1669,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Zoo%20Tickets%2C%20Ubud%2C%20Ubud%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Bali%20Zoo%20Tickets%2C%20Ubud%2C%20Ubud%2C%20Ubud%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Bali Zoo",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.5,
+    "googleReviewCount": 27133,
     "categories": [
       "Zoo"
     ],
-    "primaryCategory": "Zoo"
+    "primaryCategory": "Zoo",
+    "mobilityFriendlyScore": 90,
+    "viewScore": 62,
+    "beautyScore": 69,
+    "experienceScore": 92,
+    "overallRecommendationScore": 81
   },
   {
     "id": "1861808441970925221",
@@ -1003,10 +1693,20 @@
     "island": "Bali",
     "city": "Denpasar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Timezone%20Trans%20Studio%20Bali%2C%20South%20Denpasar%2C%20South%20Denpasar%2C%20Denpasar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Timezone%20Trans%20Studio%20Bali%2C%20South%20Denpasar%2C%20South%20Denpasar%2C%20Denpasar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Timezone Trans Studio Mall Bali",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.1,
+    "googleReviewCount": 51,
     "categories": [
       "Theme Park"
     ],
-    "primaryCategory": "Theme Park"
+    "primaryCategory": "Theme Park",
+    "mobilityFriendlyScore": 98,
+    "viewScore": 55,
+    "beautyScore": 53,
+    "experienceScore": 87,
+    "overallRecommendationScore": 77
   },
   {
     "id": "1861795098794150595",
@@ -1017,12 +1717,22 @@
     "island": "Nusa Lembongan",
     "city": "Klungkung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nusa%20Lembongan%20%26%20Nusa%20Penida%203%20spots%20snorkeling%20with%20Mangrove%20%26%20Nusa%20Lembongan%20Tour%2C%20Nusa%20Lembongan%2C%20Nusa%20Penida%2C%20Klungkung%2C%20Nusa%20Lembongan%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Nusa%20Lembongan%20%26%20Nusa%20Penida%203%20spots%20snorkeling%20with%20Mangrove%20%26%20Nusa%20Lembongan%20Tour%2C%20Nusa%20Lembongan%2C%20Nusa%20Penida%2C%20Klungkung%2C%20Nusa%20Lembongan%2C%20Indonesia",
+    "googlePlaceName": "Nusa Lembongan",
+    "googlePlaceMatchMode": "area",
+    "googleRating": null,
+    "googleReviewCount": null,
     "categories": [
       "Snorkeling",
       "Mangrove",
       "Boat"
     ],
-    "primaryCategory": "Snorkeling"
+    "primaryCategory": "Snorkeling",
+    "mobilityFriendlyScore": 52,
+    "viewScore": 98,
+    "beautyScore": 98,
+    "experienceScore": 90,
+    "overallRecommendationScore": 84
   },
   {
     "id": "1861795032417192643",
@@ -1033,11 +1743,21 @@
     "island": "Gili Trawangan",
     "city": "North Lombok",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Snorkeling%20Tour%20and%20Exploring%203%20Gili%20Islands%3A%20Gili%20Trawangan%2C%20Gili%20Meno%2C%20%26%20Gili%20Air%2C%20Gili%20Trawangan%2C%20Pemenang%2C%20North%20Lombok%2C%20Gili%20Trawangan%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Snorkeling%20Tour%20and%20Exploring%203%20Gili%20Islands%3A%20Gili%20Trawangan%2C%20Gili%20Meno%2C%20%26%20Gili%20Air%2C%20Gili%20Trawangan%2C%20Pemenang%2C%20North%20Lombok%2C%20Gili%20Trawangan%2C%20Indonesia",
+    "googlePlaceName": "Snorkeling Gili Trawangan & Gili Air",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 5,
+    "googleReviewCount": 19,
     "categories": [
       "Snorkeling",
       "Boat"
     ],
-    "primaryCategory": "Snorkeling"
+    "primaryCategory": "Snorkeling",
+    "mobilityFriendlyScore": 54,
+    "viewScore": 98,
+    "beautyScore": 98,
+    "experienceScore": 97,
+    "overallRecommendationScore": 87
   },
   {
     "id": "1861791483347094211",
@@ -1048,10 +1768,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ATV%20Ride%20Single%20%26%20Tandem%20by%20ATV%20Ride%20Bali%20-%2090%20Minutes%2C%20Sukawati%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=ATV%20Ride%20Single%20%26%20Tandem%20by%20ATV%20Ride%20Bali%20-%2090%20Minutes%2C%20Sukawati%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Bali ATV Ride & Rafting",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.9,
+    "googleReviewCount": 314,
     "categories": [
       "ATV"
     ],
-    "primaryCategory": "ATV"
+    "primaryCategory": "ATV",
+    "mobilityFriendlyScore": 54,
+    "viewScore": 69,
+    "beautyScore": 66,
+    "experienceScore": 94,
+    "overallRecommendationScore": 73
   },
   {
     "id": "1861791262537960131",
@@ -1062,10 +1792,20 @@
     "island": "Bali",
     "city": "Gianyar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=UTV%20Ride%20Buggy%20Bali%20Adventure%2C%20Sukawati%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=UTV%20Ride%20Buggy%20Bali%20Adventure%2C%20Sukawati%2C%20Sukawati%2C%20Gianyar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Buggy Bali Adventure",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.8,
+    "googleReviewCount": 169,
     "categories": [
       "UTV"
     ],
-    "primaryCategory": "UTV"
+    "primaryCategory": "UTV",
+    "mobilityFriendlyScore": 50,
+    "viewScore": 71,
+    "beautyScore": 63,
+    "experienceScore": 95,
+    "overallRecommendationScore": 73
   },
   {
     "id": "1843127291937300431",
@@ -1076,10 +1816,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Akatara%20Stay%20Jimbaran%20Bali%2C%20Badung%20Regency%2C%20Bali%2C%20Jimbaran%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Akatara%20Stay%20Jimbaran%20Bali%2C%20Badung%20Regency%2C%20Bali%2C%20Jimbaran%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "OYO 91864 Holistic Stay Jimbaran",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 3.4,
+    "googleReviewCount": 11,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 59,
+    "experienceScore": 67,
+    "overallRecommendationScore": 67
   },
   {
     "id": "1843127195435803003",
@@ -1090,10 +1840,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ratu%20Guest%20House%2C%20Badung%20Regency%2C%20Bali%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Ratu%20Guest%20House%2C%20Badung%20Regency%2C%20Bali%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Liberta Hotel Jimbaran",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4,
+    "googleReviewCount": 692,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 61,
+    "experienceScore": 78,
+    "overallRecommendationScore": 71
   },
   {
     "id": "1843127148412411855",
@@ -1104,10 +1864,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20O%20Pondok%20Dukuh%2C%20Badung%20Regency%2C%20Bali%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20O%20Pondok%20Dukuh%2C%20Badung%20Regency%2C%20Bali%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "OYO 3363 Pondok Dukuh Jati",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.1,
+    "googleReviewCount": 53,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 62,
+    "experienceScore": 74,
+    "overallRecommendationScore": 70
   },
   {
     "id": "1843127078786965883",
@@ -1118,10 +1888,20 @@
     "island": "Bali",
     "city": "Denpasar",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jatianyar%20Residence%2C%20Denpasar%2C%20Bali%2C%20Denpasar%2C%20Denpasar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Jatianyar%20Residence%2C%20Denpasar%2C%20Bali%2C%20Denpasar%2C%20Denpasar%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "Anantaya Home Denpasar",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.1,
+    "googleReviewCount": 58,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 62,
+    "experienceScore": 78,
+    "overallRecommendationScore": 72
   },
   {
     "id": "1831375420451202421",
@@ -1132,10 +1912,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Urbanview%20Hotel%20Rasa%20Sayang%20Inn%20Tanjung%20Benoa%20Bali%2C%20Badung%20Regency%2C%20Bali%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Urbanview%20Hotel%20Rasa%20Sayang%20Inn%20Tanjung%20Benoa%20Bali%2C%20Badung%20Regency%2C%20Bali%2C%20Tanjung%20Benoa%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "OYO 2548 Rasa Sayang Inn",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.1,
+    "googleReviewCount": 51,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 62,
+    "experienceScore": 78,
+    "overallRecommendationScore": 72
   },
   {
     "id": "1831375416046144376",
@@ -1146,10 +1936,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=RedDoorz%20near%20Exit%20Toll%20Nusa%20Dua%2C%20Badung%20Regency%2C%20Bali%2C%20Nusa%20Dua%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=RedDoorz%20near%20Exit%20Toll%20Nusa%20Dua%2C%20Badung%20Regency%2C%20Bali%2C%20Nusa%20Dua%2C%20South%20Kuta%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "RedDoorz near ITDC Nusa Dua",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.6,
+    "googleReviewCount": 56,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 84,
+    "viewScore": 58,
+    "beautyScore": 65,
+    "experienceScore": 81,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1831375412758848885",
@@ -1160,10 +1960,20 @@
     "island": "Bali",
     "city": "Badung",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=TwoSpaces%20Living%20at%20Kayu%20Beach%20Villa%2C%20Badung%20Regency%2C%20Bali%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=TwoSpaces%20Living%20at%20Kayu%20Beach%20Villa%2C%20Badung%20Regency%2C%20Bali%2C%20Badung%2C%20Bali%2C%20Indonesia",
+    "googlePlaceName": "OYO Kayu Beach Villa",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.5,
+    "googleReviewCount": 36,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 63,
+    "experienceScore": 80,
+    "overallRecommendationScore": 73
   },
   {
     "id": "1830917740596054904",
@@ -1174,11 +1984,21 @@
     "island": "Java",
     "city": "South Tangerang",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=BX%20Ice%20Skating%20Rink%20Tickets%20at%20Bintaro%20Jaya%20Xchange%20Mall%20South%20Tangerang%2C%20Bintaro%2C%20Bintaro%2C%20Pondok%20Aren%2C%20South%20Tangerang%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=BX%20Ice%20Skating%20Rink%20Tickets%20at%20Bintaro%20Jaya%20Xchange%20Mall%20South%20Tangerang%2C%20Bintaro%2C%20Bintaro%2C%20Pondok%20Aren%2C%20South%20Tangerang%2C%20Java%2C%20Indonesia",
+    "googlePlaceName": "Skyrink Jakarta - Mall Taman Anggrek",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.6,
+    "googleReviewCount": 6059,
     "categories": [
       "Ice Skating",
       "Theme Park"
     ],
-    "primaryCategory": "Ice Skating"
+    "primaryCategory": "Ice Skating",
+    "mobilityFriendlyScore": 98,
+    "viewScore": 47,
+    "beautyScore": 51,
+    "experienceScore": 89,
+    "overallRecommendationScore": 75
   },
   {
     "id": "1829292722764127138",
@@ -1189,10 +2009,20 @@
     "island": "Java",
     "city": "South Jakarta",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=MK%20House%20SCBD%2C%20South%20Jakarta%2C%20Jakarta%2C%20Senayan%2C%20Kebayoran%20Baru%2C%20South%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=MK%20House%20SCBD%2C%20South%20Jakarta%2C%20Jakarta%2C%20Senayan%2C%20Kebayoran%20Baru%2C%20South%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceName": "South Jakarta, Jakarta",
+    "googlePlaceMatchMode": "area",
+    "googleRating": null,
+    "googleReviewCount": null,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 62,
+    "experienceScore": 74,
+    "overallRecommendationScore": 70
   },
   {
     "id": "1829292608102341538",
@@ -1203,10 +2033,20 @@
     "island": "Java",
     "city": "West Jakarta",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=apartemen%20Taman%20Anggrek%20Residence%20by%20UNIQROOM%2C%20West%20Jakarta%2C%20Jakarta%2C%20Tanjung%20Duren%20Selatan%2C%20Grogol%20Petamburan%2C%20West%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=apartemen%20Taman%20Anggrek%20Residence%20by%20UNIQROOM%2C%20West%20Jakarta%2C%20Jakarta%2C%20Tanjung%20Duren%20Selatan%2C%20Grogol%20Petamburan%2C%20West%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceName": "Taman Anggrek Residences",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 3.8,
+    "googleReviewCount": 925,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 60,
+    "experienceScore": 77,
+    "overallRecommendationScore": 71
   },
   {
     "id": "1829292559796542370",
@@ -1217,10 +2057,20 @@
     "island": "Java",
     "city": "West Jakarta",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taman%20Anggrek%20Residence%20By%20Gin%2C%20West%20Jakarta%2C%20Jakarta%2C%20Tanjung%20Duren%20Selatan%2C%20Grogol%20Petamburan%2C%20West%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Taman%20Anggrek%20Residence%20By%20Gin%2C%20West%20Jakarta%2C%20Jakarta%2C%20Tanjung%20Duren%20Selatan%2C%20Grogol%20Petamburan%2C%20West%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceName": "Taman Anggrek Residences",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 3.8,
+    "googleReviewCount": 925,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 60,
+    "experienceScore": 78,
+    "overallRecommendationScore": 71
   },
   {
     "id": "1829292413072453690",
@@ -1231,10 +2081,20 @@
     "island": "Java",
     "city": "West Jakarta",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Tjokro%20Jakarta%2C%20West%20Jakarta%2C%20Jakarta%2C%20Grogol%20Petamburan%2C%20West%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Grand+Tjokro/@-6.1656077,106.781744,17z/data=!3m1!4b1!4m9!3m8!1s0x2e69f64f84a28eb5:0x5e5c43ad95256218!5m2!4m1!1i2!8m2!3d-6.1656077!4d106.781744!16s%2Fg%2F1tdjnklv?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Grand Tjokro",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.2,
+    "googleReviewCount": 3748,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 84,
+    "viewScore": 58,
+    "beautyScore": 63,
+    "experienceScore": 81,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1829292347222924194",
@@ -1245,10 +2105,20 @@
     "island": "Java",
     "city": "Central Jakarta",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=W%20Home%20Benhil%2C%20Central%20Jakarta%2C%20Jakarta%2C%20Bendungan%20Hilir%2C%20Tanah%20Abang%2C%20Central%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=W%20Home%20Benhil%2C%20Central%20Jakarta%2C%20Jakarta%2C%20Bendungan%20Hilir%2C%20Tanah%20Abang%2C%20Central%20Jakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceName": "Tondano Residence Jakarta",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.2,
+    "googleReviewCount": 249,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 62,
+    "experienceScore": 80,
+    "overallRecommendationScore": 72
   },
   {
     "id": "1746428163011914083",
@@ -1259,10 +2129,20 @@
     "island": "Java",
     "city": "Yogyakarta",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Tjokro%20Yogyakarta%2C%20Yogyakarta%2C%20Special%20Region%20of%20Yogyakarta%2C%20Yogyakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Tjokro%20Yogyakarta%2C%20Yogyakarta%2C%20Special%20Region%20of%20Yogyakarta%2C%20Yogyakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceName": "Sans Vibes Hotel Grand Omah Sastro Gejayan",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.4,
+    "googleReviewCount": 325,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 63,
+    "experienceScore": 81,
+    "overallRecommendationScore": 73
   },
   {
     "id": "1746428148322405751",
@@ -1273,10 +2153,20 @@
     "island": "Java",
     "city": "Yogyakarta",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ros%20In%20Hotel%2C%20Yogyakarta%2C%20Special%20Region%20of%20Yogyakarta%2C%20Yogyakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/place/Ros-In+Hotel+Yogyakarta/@-7.835672,110.3680438,17z/data=!3m1!4b1!4m9!3m8!1s0x2e7a57ad651e4885:0x6bbf530298ce16c6!5m2!4m1!1i2!8m2!3d-7.835672!4d110.3680438!16s%2Fg%2F1tnl3pz5?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D",
+    "googlePlaceName": "Ros-In Hotel Yogyakarta",
+    "googlePlaceMatchMode": "heuristic",
+    "googleRating": 4.4,
+    "googleReviewCount": 4600,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 84,
+    "viewScore": 58,
+    "beautyScore": 64,
+    "experienceScore": 83,
+    "overallRecommendationScore": 74
   },
   {
     "id": "1746428140131978615",
@@ -1287,9 +2177,19 @@
     "island": "Java",
     "city": "Yogyakarta",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=KJ%20Hotel%20Yogyakarta%2C%20Yogyakarta%2C%20Special%20Region%20of%20Yogyakarta%2C%20Yogyakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceUrl": "https://www.google.com/maps/search/?api=1&query=KJ%20Hotel%20Yogyakarta%2C%20Yogyakarta%2C%20Special%20Region%20of%20Yogyakarta%2C%20Yogyakarta%2C%20Java%2C%20Indonesia",
+    "googlePlaceName": "Burza Hotel Yogyakarta",
+    "googlePlaceMatchMode": "area",
+    "googleRating": 4.5,
+    "googleReviewCount": 4989,
     "categories": [
       "Hotel"
     ],
-    "primaryCategory": "Hotel"
+    "primaryCategory": "Hotel",
+    "mobilityFriendlyScore": 82,
+    "viewScore": 57,
+    "beautyScore": 63,
+    "experienceScore": 84,
+    "overallRecommendationScore": 74
   }
 ]

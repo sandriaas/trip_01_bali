@@ -50,7 +50,8 @@ a {
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
 }
 
@@ -61,7 +62,7 @@ button:disabled {
 }
 
 #app {
-  max-width: 1540px;
+  max-width: 2260px;
   margin: 0 auto;
 }
 
@@ -190,7 +191,7 @@ button:disabled {
 
 .actions-grid {
   display: grid;
-  grid-template-columns: repeat(3, auto) 1fr;
+  grid-template-columns: repeat(4, auto) 1fr;
   align-items: center;
   gap: 12px;
 }
@@ -303,7 +304,13 @@ button:disabled {
 .table-header,
 .trip-row {
   display: grid;
-  grid-template-columns: minmax(250px, 0.9fr) minmax(200px, 0.68fr) minmax(520px, 1.62fr);
+  grid-template-columns:
+    minmax(220px, 0.86fr)
+    minmax(170px, 0.58fr)
+    minmax(300px, 0.92fr)
+    minmax(280px, 0.92fr)
+    minmax(430px, 1.34fr)
+    minmax(280px, 0.92fr);
 }
 
 .table-header {
@@ -342,7 +349,10 @@ button:disabled {
 }
 
 .location-cell,
-.category-cell {
+.category-cell,
+.insights-cell,
+.comparison-cell,
+.note-cell {
   display: grid;
   align-content: start;
   gap: 8px;
@@ -439,6 +449,115 @@ button:disabled {
   letter-spacing: 0.03em;
 }
 
+.score-grid,
+.fact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.score-chip,
+.fact-chip,
+.match-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(25, 77, 102, 0.12);
+  background: rgba(25, 77, 102, 0.05);
+  color: var(--brand);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.score-chip strong,
+.fact-chip strong {
+  color: var(--text);
+}
+
+.score-chip.is-strong {
+  background: rgba(25, 77, 102, 0.12);
+}
+
+.match-badge {
+  color: var(--muted);
+}
+
+.insight-line,
+.comparison-line,
+.comparison-pool,
+.comparison-rank,
+.note-hint {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.insight-line strong,
+.comparison-line strong {
+  color: var(--text);
+}
+
+.comparison-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.comparison-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(232, 93, 34, 0.12);
+  color: #93411f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.note-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.note-input,
+.note-display {
+  width: 100%;
+  min-height: 132px;
+  padding: 12px 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(25, 77, 102, 0.14);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.note-input {
+  resize: vertical;
+}
+
+.note-input:focus {
+  outline: 2px solid rgba(25, 77, 102, 0.16);
+  outline-offset: 1px;
+  border-color: rgba(25, 77, 102, 0.28);
+}
+
+.note-display {
+  font-size: 13px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.note-display.is-empty {
+  color: var(--muted);
+}
+
 .list-card {
   display: grid;
   grid-template-columns: auto 84px minmax(0, 1fr) auto;
@@ -523,7 +642,7 @@ button:disabled {
 .title-link {
   color: var(--text);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.14;
   letter-spacing: -0.03em;
   font-weight: 700;
@@ -580,7 +699,7 @@ button:disabled {
 }
 
 .export-sheet {
-  width: 1280px;
+  width: 2120px;
   padding: 24px;
   background:
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 34%),
@@ -614,7 +733,13 @@ button:disabled {
 @media (max-width: 1100px) {
   .table-header,
   .trip-row {
-    grid-template-columns: minmax(220px, 0.9fr) minmax(180px, 0.7fr) minmax(0, 1.45fr);
+    grid-template-columns:
+      minmax(220px, 0.86fr)
+      minmax(170px, 0.62fr)
+      minmax(240px, 0.88fr)
+      minmax(220px, 0.9fr)
+      minmax(0, 1.16fr)
+      minmax(240px, 0.88fr);
   }
 
   .list-card {
@@ -687,6 +812,6 @@ button:disabled {
   }
 
   .export-sheet {
-    width: 960px;
+    width: 1220px;
   }
 }
