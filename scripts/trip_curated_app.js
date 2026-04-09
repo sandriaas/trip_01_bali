@@ -1285,7 +1285,9 @@
   }
 
   function replaceScriptPayload(documentHtml, id, payload) {
-    const pattern = new RegExp('(<script id="' + id + '" type="application/json">)[\\s\\S]*?(</script>)');
+    const openTag = '<script id="' + id + '" type="application/json">';
+    const closeTag = '<' + '/script>';
+    const pattern = new RegExp('(' + escapeRegex(openTag) + ')[\\s\\S]*?(' + escapeRegex(closeTag) + ')');
     const nextHtml = documentHtml.replace(pattern, function (_, open, close) {
       return open + payload + close;
     });
@@ -1298,6 +1300,10 @@
   function parseTimestamp(value) {
     const time = Date.parse(value || '');
     return Number.isNaN(time) ? 0 : time;
+  }
+
+  function escapeRegex(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 
   function localeCompare(left, right) {
